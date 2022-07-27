@@ -66,6 +66,17 @@ body {
     border: 1px solid black !important;
 }
 
+.nav-menu {
+    margin-bottom: -64px;
+    background-color: rgb(237, 227, 233, 0.3);
+}
+
+.nav-menu:hover,
+.nav-menu:active,
+.nav-menu:focus {
+    background: #fff;
+    color: #9F84BD;
+}
 
 /* ----------------------------------------------------- MEDIA QUERIES */
 
