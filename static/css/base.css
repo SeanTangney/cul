@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/background_image.webp') no-repeat center center fixed;
+    background: url('/media/site_images/background_image.webp') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #EDE3E9;
@@ -58,18 +58,24 @@ body {
     color: #EDE3E9;
 }
 
+
 .text-black {
     color: black !important;
 }
+
 
 .border-black {
     border: 1px solid black !important;
 }
 
+
 .nav-menu {
-    margin-bottom: -64px;
-    background-color: rgb(237, 227, 233, 0.3);
+    margin-top: -65px;
+    text-align: right;
+    padding: 20px, 0;
+    /* background-color: rgb(237, 227, 233, 0.3); */
 }
+
 
 .nav-menu:hover,
 .nav-menu:active,
@@ -78,16 +84,20 @@ body {
     color: #9F84BD;
 }
 
+
 /* ----------------------------------------------------- MEDIA QUERIES */
 
 /* Larger container on xl screens */
+
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;
     }
 }
 
+
 /* fixed top navbar only, medium size and up */
+
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -99,5 +109,11 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+
+    .nav-menu {
+        margin-top: 0;
+        margin-bottom: -64px;
+        background-color: rgb(237, 227, 233, 0.3);
     }
 }
