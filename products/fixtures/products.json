@@ -536,7 +536,7 @@
         "price": 65.00,
         "category": 1,
         "rating": 5.0,
-        "image": "Kilkenny-womens-home-jersey.jpg"
+        "image": "kilkenny-womens-home-jersey.jpg"
     }
 }, {
     "pk": 46,
@@ -608,7 +608,7 @@
         "price": 65.00,
         "category": 1,
         "rating": 5.0,
-        "image": "leirtim-womens-home-jersey.jpg"
+        "image": "leitrim-womens-home-jersey.jpg"
     }
 }, {
     "pk": 52,
@@ -872,7 +872,7 @@
         "price": 75.00,
         "category": 1,
         "rating": 5.0,
-        "image": "roscomman-home-jersey.jpg"
+        "image": "roscommon-home-jersey.jpg"
     }
 }, {
     "pk": 74,
@@ -884,7 +884,7 @@
         "price": 50.00,
         "category": 1,
         "rating": 5.0,
-        "image": "roscomman-kids-home-jersey.jpg"
+        "image": "roscommon-kids-home-jersey.jpg"
     }
 }, {
     "pk": 75,
@@ -1052,7 +1052,7 @@
         "price": 75.00,
         "category": 1,
         "rating": 5.0,
-        "image": "weatmeath-home-jersey.jpg"
+        "image": "westmeath-home-jersey.jpg"
     }
 }, {
     "pk": 89,
@@ -1064,7 +1064,7 @@
         "price": 50.00,
         "category": 1,
         "rating": 5.0,
-        "image": "weatmeath-kids-home-jersey.jpg"
+        "image": "westmeath-kids-home-jersey.jpg"
     }
 }, {
     "pk": 90,
