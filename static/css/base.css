@@ -126,3 +126,14 @@ body {
         background-color: rgb(237, 227, 233, 0.3);
     }
 }
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+
+}
