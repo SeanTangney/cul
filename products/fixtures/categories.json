@@ -9,7 +9,7 @@
     "pk": 2,
     "model": "products.category",
     "fields": {
-        "name": "equiptment",
+        "name": "equipment",
         "friendly_name": "Equipment"
     }
 }, {
