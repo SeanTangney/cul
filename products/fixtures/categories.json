@@ -19,4 +19,25 @@
         "name": "offers",
         "friendly_name": "Special Offers"
     }
+}, {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+        "name": "training_top",
+        "friendly_name": "Training Tops"
+    }
+}, {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+        "name": "home_gym",
+        "friendly_name": "Home Gym"
+    }
+}, {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+        "name": "accessories",
+        "friendly_name": "Accessories"
+    }
 }]

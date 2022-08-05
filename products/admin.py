@@ -12,7 +12,7 @@ class ProductAdmin(admin.ModelAdmin):
         'image',
     )
 
-    ordering = ('sku',)
+    ordering = ('name',)
 
 
 class CategoryAdmin(admin.ModelAdmin):
