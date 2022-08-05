@@ -1158,7 +1158,7 @@
         "name": "Kerry Kids Blue Training Jersey",
         "description": "Kerry Kids Training Jersey For 2022 Season.",
         "price": 35.00,
-        "category": 1,
+        "category": 4,
         "rating": 5.0,
         "image": "kerry-kids-training-jersey-blue.jpg"
     }
@@ -1170,7 +1170,7 @@
         "name": "Kerry Mens Blue Training Jersey",
         "description": "Kerry Mens Training Jersey For 2022 Season.",
         "price": 50.00,
-        "category": 1,
+        "category": 4,
         "rating": 5.0,
         "image": "kerry-mens-training-jersey-blue.jpg"
     }
@@ -1182,7 +1182,7 @@
         "name": "Kerry Ladies Blue Training Jersey",
         "description": "Kerry Ladies Training Jersey For 2022 Season.",
         "price": 45.00,
-        "category": 1,
+        "category": 4,
         "rating": 5.0,
         "image": "kerry-ladies-training-jersey-blue.jpg"
     }
@@ -1194,7 +1194,7 @@
         "name": "Kerry Kids Green Training Jersey",
         "description": "Kerry Kids Training Jersey For 2022 Season.",
         "price": 35.00,
-        "category": 1,
+        "category": 4,
         "rating": 5.0,
         "image": "kerry-kids-training-jersey-green.jpg"
     }
@@ -1206,7 +1206,7 @@
         "name": "Kerry Mens Green Training Jersey",
         "description": "Kerry Mens Training Jersey For 2022 Season.",
         "price": 50.00,
-        "category": 1,
+        "category": 4,
         "rating": 5.0,
         "image": "kerry-mens-training-jersey-green.jpg"
     }
@@ -1218,7 +1218,7 @@
         "name": "Kerry Ladies Green Training Jersey",
         "description": "Kerry Ladies Training Jersey For 2022 Season.",
         "price": 45.00,
-        "category": 1,
+        "category": 4,
         "rating": 5.0,
         "image": "kerry-ladies-training-jersey-green.jpg"
     }
@@ -1230,7 +1230,7 @@
         "name": "Adults Football Gloves Black",
         "description": "Adults black gloves for football.",
         "price": 20.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "adult-gloves.jpg"
     }
@@ -1242,7 +1242,7 @@
         "name": "Kids Football Gloves Black",
         "description": "Kids black gloves for football.",
         "price": 12.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "kids-gloves.jpg"
     }
@@ -1290,7 +1290,7 @@
         "name": "Kerry Water Bottle",
         "description": "500ml water bottle with Kerry logo.",
         "price": 12.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "kerry-water-bottle.jpg"
     }
@@ -1314,7 +1314,7 @@
         "name": "O'Neills Umbrella",
         "description": "Large O'Neills umbrella.",
         "price": 25.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "oneills-umbrella.jpg"
     }
@@ -1362,7 +1362,7 @@
         "name": "Wicklow Water Bottle",
         "description": "500ml water bottle with Wicklow logo.",
         "price": 12.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "wicklow-water-bottle.jpg"
     }
@@ -1422,7 +1422,7 @@
         "name": "Cultec Hurl For Kids",
         "description": "Blue Cultec hurl for kids.",
         "price": 25.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "cultec-hurl-blue.jpg"
     }
@@ -1434,7 +1434,7 @@
         "name": "Cultec Hurl For Kids",
         "description": "Cultec hurl for kids.",
         "price": 25.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "cultec-hurl.jpg"
     }
@@ -1446,7 +1446,7 @@
         "name": "Mycro Hurl For Kids",
         "description": "Blue Mycro hurl for kids.",
         "price": 30.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "mycro-hurl-blue.jpg"
     }
@@ -1458,7 +1458,7 @@
         "name": "Mycro Helmet Green",
         "description": "Adults hurling helmet in green.",
         "price": 60.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "mycro-helmet-green.jpg"
     }
@@ -1470,7 +1470,7 @@
         "name": "Mycro Helmet White",
         "description": "Adults hurling helmet in white.",
         "price": 60.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "mycro-helmet-white.jpg"
     }
@@ -1494,7 +1494,7 @@
         "name": "Green Hurling Grip",
         "description": "High quality hurling grip tape.",
         "price": 6.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "hurling-grip-super-green.jpg"
     }
@@ -1506,7 +1506,7 @@
         "name": "Marine Hurling Grip",
         "description": "High quality hurling grip tape.",
         "price": 6.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "hurling-grip-super-marine.jpg"
     }
@@ -1518,7 +1518,7 @@
         "name": "2.5KG Dumbell Set",
         "description": "1 set of 2.5KG dumbells.",
         "price": 20.00,
-        "category": 2,
+        "category": 6,
         "rating": 5.0,
         "image": "2.5kg-dumbells.jpg"
     }
@@ -1530,7 +1530,7 @@
         "name": "5KG Dumbell Set",
         "description": "1 set of 5KG dumbells.",
         "price": 32.50,
-        "category": 2,
+        "category": 6,
         "rating": 5.0,
         "image": "5kg-dumbells.jpg"
     }
@@ -1542,7 +1542,7 @@
         "name": "6KG Kettlebell",
         "description": "6kg green kettlebell.",
         "price": 20.00,
-        "category": 2,
+        "category": 6,
         "rating": 5.0,
         "image": "6kg-kettlebell.jpg"
     }
@@ -1554,7 +1554,7 @@
         "name": "4KG Kettlebell",
         "description": "4kg purple kettlebell.",
         "price": 16.00,
-        "category": 2,
+        "category": 6,
         "rating": 5.0,
         "image": "4kg-kettlebell.jpg"
     }
@@ -1566,7 +1566,7 @@
         "name": "Chin Up Bar",
         "description": "Chin up bar for home workouts.",
         "price": 30.00,
-        "category": 2,
+        "category": 6,
         "rating": 5.0,
         "image": "chin-up-bar.jpg"
     }
@@ -1578,7 +1578,7 @@
         "name": "Push Up Handles",
         "description": "Push up handles for home workouts.",
         "price": 20.00,
-        "category": 2,
+        "category": 6,
         "rating": 5.0,
         "image": "push-up-bar.jpg"
     }
@@ -1590,7 +1590,7 @@
         "name": "Ab Wheel",
         "description": "Ab wheel for home workouts.",
         "price": 20.00,
-        "category": 2,
+        "category": 6,
         "rating": 5.0,
         "image": "ab-wheel.jpg"
     }
@@ -1614,7 +1614,7 @@
         "name": "Medium Flex Resistance Band",
         "description": "Resistance band for home workouts.",
         "price": 8.00,
-        "category": 2,
+        "category": 6,
         "rating": 5.0,
         "image": "res-band-medium.jpg"
     }
@@ -1626,7 +1626,7 @@
         "name": "Strong Flex Resistance Band",
         "description": "Resistance band for home workouts..",
         "price": 8.00,
-        "category": 2,
+        "category": 6,
         "rating": 5.0,
         "image": "res-band-strong.jpg"
     }
@@ -1638,7 +1638,7 @@
         "name": "Light Flex Resistance Band",
         "description": "Resistance band for home workouts.",
         "price": 8.00,
-        "category": 2,
+        "category": 6,
         "rating": 5.0,
         "image": "res-band-light.jpg"
     }
@@ -1650,7 +1650,7 @@
         "name": "Speed Rope",
         "description": "Skipping rope for speed skipping.",
         "price": 16.00,
-        "category": 2,
+        "category": 6,
         "rating": 5.0,
         "image": "speed-rope.jpg"
     }
@@ -1662,7 +1662,7 @@
         "name": "Green Yoga Mat",
         "description": "Perfect for home workouts and yoga.",
         "price": 22.00,
-        "category": 2,
+        "category": 6,
         "rating": 5.0,
         "image": "yoga-mat-green.jpg"
     }
@@ -1674,7 +1674,7 @@
         "name": "Pink Yoga Mat",
         "description": "Perfect for home workouts and yoga.",
         "price": 22.00,
-        "category": 2,
+        "category": 6,
         "rating": 5.0,
         "image": "yoga-mat-pink.jpg"
     }
@@ -1686,7 +1686,7 @@
         "name": "Purple Yoga Mat",
         "description": "Perfect for home workouts and yoga.",
         "price": 22.00,
-        "category": 2,
+        "category": 6,
         "rating": 5.0,
         "image": "yoga-mat-purple.jpg"
     }
@@ -1698,7 +1698,7 @@
         "name": "Black Foam Roller",
         "description": "Foam roller for muscle recovery.",
         "price": 20.00,
-        "category": 2,
+        "category": 6,
         "rating": 5.0,
         "image": "foam-roller-black.jpg"
     }
@@ -1710,7 +1710,7 @@
         "name": "2.2L Waterbottle",
         "description": "Large waterbottle with carry handle.",
         "price": 10.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "water-bottle-large.jpg"
     }
@@ -1722,7 +1722,7 @@
         "name": "Pink Foam Roller",
         "description": "Foam roller for muscle recovery.",
         "price": 20.00,
-        "category": 2,
+        "category": 6,
         "rating": 5.0,
         "image": "foam-roller-pink.jpg"
     }
@@ -1734,7 +1734,7 @@
         "name": "Cultec Hurl For Kids",
         "description": "Pink Cultec Hurley For Kids.",
         "price": 25.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "cultec-hurl-pink.jpg"
     }
@@ -1746,7 +1746,7 @@
         "name": "Mycro Adult Helmet Black",
         "description": "Adults hurling helmet in black.",
         "price": 60.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "mycro-helmet-black.jpg"
     }
@@ -1758,7 +1758,7 @@
         "name": "Mycro Hurl For Kids",
         "description": "Pink Mycro Hurley For Kids.",
         "price": 30.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "mycro-hurl-pink.jpg"
     }
@@ -1770,7 +1770,7 @@
         "name": "Torpey Adult Hurl",
         "description": "Adult size hurley.",
         "price": 45.00,
-        "category": 2,
+        "category": 5,
         "rating": 5.0,
         "image": "torpey-hurl.jpg"
     }

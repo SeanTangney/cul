@@ -21,8 +21,8 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?category=jerseys" class="dropdown-item">Jerseys</a>
-                <a href="{% url 'products' %}?category=training_tops" class="dropdown-item">Training Tops</a>
-                <a href="{% url 'products' %}?category=jerseys,training_tops" class="dropdown-item">All Clothing</a>
+                <a href="{% url 'products' %}?category=training_top" class="dropdown-item">Training Tops</a>
+                <a href="{% url 'products' %}?category=jerseys,training_top" class="dropdown-item">All Clothing</a>
             </div>
         </li>
 
@@ -32,21 +32,9 @@
                 Equipment
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">All Equipment</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="all-products-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">By County</a>
-                <a href="" class="dropdown-item">By Product Type</a>
-                <a href="" class="dropdown-item">All Offers</a>
+                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
+                <a href="{% url 'products' %}?category=home_gym" class="dropdown-item">Home Gym Equipment</a>
+                <a href="{% url 'products' %}?category=accessories,home_gym" class="dropdown-item">All Equipment</a>
             </div>
         </li>
 
