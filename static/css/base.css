@@ -88,6 +88,11 @@ body {
     color: #9F84BD;
 }
 
+a.category-badge>span.badge:hover {
+    background: #5bc0de !important;
+    color: black !important;
+}
+
 
 /* ----------------------------------------------------- MEDIA QUERIES */
 
