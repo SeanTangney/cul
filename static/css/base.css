@@ -110,6 +110,10 @@ a.category-badge>span.badge:hover {
     padding-bottom: 12%;
 }
 
+.delivery_banner {
+    background-color: #5bc0de;
+}
+
 /* ----------------------------------------------------- MEDIA QUERIES */
 
 /* Larger container on xl screens */
