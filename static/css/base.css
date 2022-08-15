@@ -68,6 +68,20 @@ body {
 }
 
 
+.btn-outline-black {
+    background: white;
+    color: #5bc0de !important;
+    border: 1px solid #5bc0de;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: #5bc0de;
+    color: white !important;
+}
+
+
 .border-black {
     border: 1px solid black !important;
 }
@@ -113,6 +127,8 @@ a.category-badge>span.badge:hover {
 .delivery_banner {
     background-color: #5bc0de;
 }
+
+
 
 /* ----------------------------------------------------- MEDIA QUERIES */
 
