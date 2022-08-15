@@ -106,6 +106,10 @@ a.category-badge>span.badge:hover {
     cursor: pointer;
 }
 
+.blank-row {
+    padding-bottom: 12%;
+}
+
 /* ----------------------------------------------------- MEDIA QUERIES */
 
 /* Larger container on xl screens */
@@ -125,6 +129,7 @@ a.category-badge>span.badge:hover {
     background: white;
     z-index: -1;
 }
+
 
 /* fixed top navbar only, medium size and up */
 
