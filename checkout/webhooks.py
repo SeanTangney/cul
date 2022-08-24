@@ -1,4 +1,5 @@
 # Source https://stripe.com/docs/webhooks
+# Boutique Ado Tutorial
 
 from django.conf import settings
 from django.http import HttpResponse
