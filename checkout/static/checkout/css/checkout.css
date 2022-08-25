@@ -36,6 +36,17 @@
     border: 1px solid #5bc0de;
 }
 
+select,
+select option {
+    color: #5bc0de;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #4d7e97 !important;
+}
+
+
 /* ----------------------------------------Loading Spinner */
 /* https://www.w3schools.com/howto/howto_css_loader.asp */
 
