@@ -1,0 +1,1 @@
+Cúl Confirmation For Order Number : {{ order.order_number }}

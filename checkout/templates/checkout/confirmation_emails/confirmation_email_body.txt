@@ -1,0 +1,24 @@
+Hi {{ order.full_name }},
+
+This is a confirmation of your order on {{ order.date }}.
+Details of your order are below.
+
+Order Number: {{ order.order_number }}
+
+Order Total: €{{ order.order_total }}
+Delivery: €{{ order.delivery_cost }}
+Grand Total: €{{ order.grand_total }}
+
+
+Your order will be shipped to: 
+{{ order.street_address1}}
+{{ order.street_address2}}
+{{ order.town_or_city }}
+{{ order.county }}
+{{ order.country }}
+
+Please dont hesitate to contact us with any queries at {{ contact_email }}
+
+We appreciate your custom.
+
+Cúl
