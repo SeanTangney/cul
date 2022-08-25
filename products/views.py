@@ -42,7 +42,8 @@ def all_products(request):
                                "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -71,7 +72,18 @@ def product_detail(request, product_id):
 
 def add_product(request):
     """For superusers for adding products to the store"""
-    form = ProductForm()
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully a added new product!')
+            return redirect(reverse('add_product'))
+        else:
+            messages.error(request, 'Failed to add product. '
+                                    'Please review the form.')
+    else:
+        form = ProductForm()
+
     template = 'products/add_product.html'
     context = {
         'form': form,
