@@ -21,8 +21,9 @@
                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
-                <a href="{{ product.image.url }}">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                <a href="{{ MEDIA_URL }}site_images/cul_logo.png">
+                    <img class=" card-img-top img-fluid" src="{{ MEDIA_URL }}site_images/cul_logo.png"
+                        alt="{{ product.name }}">
                 </a>
                 {% endif %}
             </div>
