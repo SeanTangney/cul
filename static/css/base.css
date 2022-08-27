@@ -297,14 +297,8 @@ input[name='q']::placeholder {
 
 @media (max-width: 991px) {
 
-
-    .list-inline-item:not(:last-child) {
-        font-size: 1rem;
-        margin-right: -0.5rem;
-    }
-
     .nav-menu li.list-inline-item {
-        margin-right: -0.5rem;
+        margin-right: 0.5rem;
     }
 
     .header-container {
@@ -315,8 +309,8 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 
-    .display-4.logo-font.text-info {
-        font-size: 1rem;
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
     }
 
     .nav-link {
@@ -324,7 +318,7 @@ input[name='q']::placeholder {
     }
 
     .nav-link i.fa-lg {
-        font-size: .5rem;
+        font-size: 1rem;
     }
 
     .navbar-toggler {
@@ -332,7 +326,18 @@ input[name='q']::placeholder {
         font-size: 1rem;
     }
 
-    .delivery_banner h4 {
-        font-size: .5rem;
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
     }
 }
