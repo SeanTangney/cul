@@ -29,6 +29,13 @@ body {
     color: #EDE3E9;
 }
 
+
+.nav-menu {
+    margin-top: -65px;
+    text-align: right;
+    padding: 20px, 0;
+}
+
 .main-logo-link {
     width: fit-content;
 }
@@ -91,8 +98,8 @@ body {
 .nav-menu {
     text-align: right;
     margin-top: -40px;
-    /* padding: 20px, 0; */
-    /* background-color: rgb(237, 227, 233, 0.3); */
+    padding: 20px, 0;
+    background-color: #fff;
 }
 
 
@@ -303,6 +310,7 @@ input[name='q']::placeholder {
 
     .header-container {
         padding-top: 116px;
+
     }
 
     body {
@@ -318,7 +326,8 @@ input[name='q']::placeholder {
     }
 
     .nav-link i.fa-lg {
-        font-size: 1rem;
+        font-size: 2rem;
+        margin: auto;
     }
 
     .navbar-toggler {
