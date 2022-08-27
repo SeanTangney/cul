@@ -79,8 +79,8 @@ def checkout(request):
                             order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your bag wasn't found in our database. \
-                        Please call us for assistance!")
+                        "One of the products in your bag wasn't found in our database. "
+                        "Please call us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
@@ -124,9 +124,10 @@ def checkout(request):
         else:
             order_form = OrderForm()
 
-        if not stripe_public_key:
-            messages.warning(request, 'Stripe public key is missing. \
-                Did you forget to set it in your environment?')
+    if not stripe_public_key:
+        messages.warning(request, 'Stripe public key is missing.'
+                                  ' Did you forget to set it in your'
+                                  ' environment?')
 
         template = 'checkout/checkout.html'
         context = {
@@ -165,6 +166,7 @@ def checkout_success(request, order_number):
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
+
     messages.success(request, f'Order successfully processed! \
             A confirmation email will be sent to {order.email}')
 

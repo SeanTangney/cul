@@ -30,7 +30,17 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['cul-sports.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = [
+    'cul-sports.herokuapp.com',
+    'localhost',
+    '8000-seantangney-cul-hmct6nlpfqt.ws-eu63.gitpod.io',
+    ]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://cul-sports.herokuapp.com',
+    'http://localhost',
+    'https://8000-seantangney-cul-hmct6nlpfqt.ws-eu63.gitpod.io',
+]
 
 # Application definition
 
@@ -53,7 +63,6 @@ INSTALLED_APPS = [
 
     # Other
     'crispy_forms',
-    'stripe',
     'storages',
     ]
 
@@ -76,6 +85,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'checkout', 'templates', 'confirmation_emails'),
             os.path.join(BASE_DIR, 'templates', 'allauth'),
         ],
         'APP_DIRS': True,
@@ -98,13 +108,13 @@ TEMPLATES = [
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
-AUTHENTICATION_BACKENDS = [
+AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
-]
+)
 
 SITE_ID = 1
 
@@ -133,7 +143,7 @@ else:
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-            }
+        }
     }
 
 
@@ -179,7 +189,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if 'USE_AWS' in os.environ:
-# Cache control
+    # Cache control
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
@@ -221,7 +231,7 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'orders@cul.ie'
+    DEFAULT_FROM_EMAIL = 'seantangney1997@gmail.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
