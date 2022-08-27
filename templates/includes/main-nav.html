@@ -1,6 +1,11 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto h-auto mx-auto">
-
+        <li class="nav-item dropdown d-block d-lg-none">
+            <a href="{% url 'home' %}" class="logo-font font-weight-bold nav-link text-black mr-5" id="home-link">
+                Home
+                <hr>
+            </a>
+        </li>
         <li class="nav-item dropdown">
             <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="all-products-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -42,7 +47,7 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 County
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0 justify-content-sm-auto" aria-labelledby="all-products-link">
                 <table>
                     <td>
                         <a href="{% url 'products' %}?q=antrim" class="dropdown-item">Antrim</a>
@@ -53,8 +58,6 @@
                         <a href="{% url 'products' %}?q=cork" class="dropdown-item">Cork</a>
                         <a href="{% url 'products' %}?q=derry" class="dropdown-item">Derry</a>
                         <a href="{% url 'products' %}?q=donegal" class="dropdown-item">Donegal</a>
-                    </td>
-                    <td>
                         <a href="{% url 'products' %}?q=down" class="dropdown-item">Down</a>
                         <a href="{% url 'products' %}?q=dublin" class="dropdown-item">Dublin</a>
                         <a href="{% url 'products' %}?q=fermanagh" class="dropdown-item">Fermanagh</a>
@@ -73,8 +76,6 @@
                         <a href="{% url 'products' %}?q=meath" class="dropdown-item">Meath</a>
                         <a href="{% url 'products' %}?q=monaghan" class="dropdown-item">Monaghan</a>
                         <a href="{% url 'products' %}?q=offaly" class="dropdown-item">Offaly</a>
-                    </td>
-                    <td>
                         <a href="{% url 'products' %}?q=roscomman" class="dropdown-item">Roscomman</a>
                         <a href="{% url 'products' %}?q=sligo" class="dropdown-item">Sligo</a>
                         <a href="{% url 'products' %}?q=tipperary" class="dropdown-item">Tipperary</a>

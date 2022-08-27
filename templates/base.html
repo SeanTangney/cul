@@ -55,9 +55,9 @@
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><img src="{% static 'site_images/gaa_logo.png' %}"
-                            class="logo">|Cúl
+                <a href="{% url 'home' %}" class="nav-link main-logo-link ">
+                    <h2 class="logo-font text-black my-0">
+                        <img src="{% static 'site_images/gaa_logo.png' %}" class="logo">|Cúl
                     </h2>
                 </a>
             </div>
@@ -76,9 +76,9 @@
                     </div>
                 </form>
             </div>
-            <div class="col col-lg-4 d-block my-auto py-1 py-lg-0">
-                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                    <li class="list-inline-item dropdown">
+            <div class="col col-lg-4 d-block my-auto py-2 py-lg-0">
+                <ul class="list-inline list-unstyled text-center text-lg-right py-2 my-0">
+                    <li class="list-inline-item dropdown justify-content-sm-auto">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
@@ -119,9 +119,9 @@
         </div>
         <div class="row bg-white">
             <nav class="navbar-expand-lg navbar-light w-100">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                <button class="navbar-toggler my-3 mx-2" type="button" data-toggle="collapse" data-target="#main-nav"
                     aria-controls="main-nav" aria-expanded="false" aria-label="Toggle Navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon mx-0 px-0"></span>
                 </button>
                 <div class="nav-menu">
                     {% include 'includes/mobile-top-header.html' %}
