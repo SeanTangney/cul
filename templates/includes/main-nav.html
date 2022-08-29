@@ -17,31 +17,6 @@
                     class="dropdown-item">All Products</a>
             </div>
         </li>
-
-        <li class="nav-item dropdown">
-            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="all-products-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Clothing
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?category=jerseys" class="dropdown-item">Jerseys</a>
-                <a href="{% url 'products' %}?category=training_top" class="dropdown-item">Training Tops</a>
-                <a href="{% url 'products' %}?category=jerseys,training_top" class="dropdown-item">All Clothing</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="all-products-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Equipment
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
-                <a href="{% url 'products' %}?category=home_gym" class="dropdown-item">Home Gym Equipment</a>
-                <a href="{% url 'products' %}?category=accessories,home_gym" class="dropdown-item">All Equipment</a>
-            </div>
-        </li>
-
         <li class="nav-item dropdown">
             <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="all-products-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -88,6 +63,28 @@
                 </table>
             </div>
         </li>
+        <li class="nav-item dropdown">
+            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="all-products-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Clothing
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %}?category=jerseys" class="dropdown-item">Jerseys</a>
+                <a href="{% url 'products' %}?category=training_top" class="dropdown-item">Training Tops</a>
+                <a href="{% url 'products' %}?category=jerseys,training_top" class="dropdown-item">All Clothing</a>
+            </div>
+        </li>
 
+        <li class="nav-item dropdown">
+            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="all-products-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Equipment
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
+                <a href="{% url 'products' %}?category=home_gym" class="dropdown-item">Home Gym Equipment</a>
+                <a href="{% url 'products' %}?category=accessories,home_gym" class="dropdown-item">All Equipment</a>
+            </div>
+        </li>
     </ul>
 </div>
