@@ -13,7 +13,7 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?category=jerseys,training_top,accessories,home_gym&?sort=name&direction=asc"
+                <a href="{% url 'products' %}?category=jerseys,training_top,accessories,equipment,home_gym&?sort=name&direction=asc"
                     class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -82,8 +82,10 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
+                <a href="{% url 'products' %}?category=equipment" class="dropdown-item">Equipment</a>
                 <a href="{% url 'products' %}?category=home_gym" class="dropdown-item">Home Gym Equipment</a>
-                <a href="{% url 'products' %}?category=accessories,home_gym" class="dropdown-item">All Equipment</a>
+                <a href="{% url 'products' %}?category=accessories,equipment,home_gym" class="dropdown-item">All
+                    Equipment</a>
             </div>
         </li>
     </ul>
