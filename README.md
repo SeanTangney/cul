@@ -34,7 +34,7 @@
 
         1. As a Returning Visitor, I want to be able to Sort the list of available products , so that i can Easily sort by rating, price and categories.
         2. As a Returning Visitor, I want to be able to Sort a specific category product , so that i can Sort by best price, rating, category or sort the products in that category by name.
-        3. As a Returning Visitor, I want to be able to Sort multiple categories of products simultaneously , so that i can Find best priced/rated products across broad categories such as clothing/homeware.
+        3. As a Returning Visitor, I want to be able to Sort multiple categories of products simultaneously , so that i can Find best priced/rated products across broad categories such as clothing/equipment.
         4. As a Returning Visitor, I want to be able to Search for a product by name or description , so that i can Find a specific product I'd like to purchase.
 
     -   #### Site Maintainer / Admin Goals
@@ -145,6 +145,95 @@ In the user profile, users can see their recent order history. They can also edi
 </details>
 <hr>
 
+<br>
+<br>
+
+# Testing User Stories from UX Section
+
+-   ## Viewing and Navigation  
+
+    1. As a Shopper, I want to be able to view a range of products so i can select some to purchase.
+
+        - It is clear to me as a user how to navigate the website and how to view products.
+        - On the landing page i can clearly see a navigation bar and i am also prompted to view this years senior jerseys.
+        
+
+    2. As a Shopper, I want to be able to view individual product details, so that i can identify the price, description, product rating, product image and available sizes.
+
+        - In any of the product pages, the preview has a price, rating and image of the product. If i click on any product it brings me to a product detail page where i can see details of the product, select sizes and add it to the shopping bag if i wish.
+        - It is clear that all of the clothing products are available with sizes and the equipment products are not.
+
+    3. As a Shopper, I want to be able to Easily view the total of my purchases at any time, so that i can avoid spending too much.
+
+        - It is clear that all of the products on the site are presented with their price. 
+        - At any given time if there are products in the checkout bag, then there is a grand total desplayed on the checkout icon (top right).
+        - On the checkout page i can clearly see a subtotal of any product if the quantity is more than one. I can see a delivery cost and i can see a grand total.
+
+<br>
+
+-   ## Registration and User Accounts
+
+    1. As a Site User, I want to be able to easily register for an account, so that i can have a personal account and be able to store my details.
+
+        - When i click the user icon on the top right of the screen i can clearly see where to register for an account or sign in if i already have one.
+        - When i register i get an email sent to verify my account.
+
+    2. As a Site User, I want to be able to see my order history and save my delivery information in my profile.
+
+        - When i am a registered user i gain access to a user profile. Here i can update my delivery information to ensure swift checkouts. 
+        - I can see my past order history in my user profile.
+
+    3. As a Site User, I want to be able to easily login or logout, so that i can Access my personal account information.
+        
+        - Logging in and out is very user friendly and can be found by pressing on the user icon in the top right of the screen.
+
+    4. As a Site User, I want to be able to reset my password if i forget it.
+
+        - Resetting a password is easy and can be accessed from the sign in page. 
+
+    5. As a Site User, I want to be able to receive confirmation email after registration , so that i can Verify that my account registration was successful.
+
+        - An email will be sent to new users upon registration to verify their account.
+
+<br>
+
+-   ## Returning Visitor Goals
+
+    1. As a Returning Visitor, I want to be able to Sort the list of available products , so that i can easily sort by rating, price and categories.
+
+        - On the products page i can click the "sort by" dropdown menu and choose how to to order the products im viewing.
+
+    2. As a Returning Visitor, I want to be able to sort a specific category product , so that i can Sort by best price, rating, category or sort the products in that category by name.
+
+        - From the navbar i can select from the dropdown menus which category of item i want to look at. I can also see category indicators below the navbar which i can press to change to more specific categories.
+
+    3. As a Returning Visitor, I want to be able to Sort multiple categories of products simultaneously , so that i can Find best priced/rated products across broad categories such as clothing/equipment.
+
+        - By navigating to the all products page. I can click on the category indicators below the nav bar to show only categories that i want to.
+
+    4. As a Returning Visitor, I want to be able to Search for a product by name or description , so that i can Find a specific product I'd like to purchase.
+
+        - By using the search bar i can type any product name or related word into the search bar and see relevant products.
+
+
+<br>
+    
+-   ## Site Maintainer / Admin Goals
+
+    1. As an Admin of the site i want to be able to see new users and their account status.
+
+        - Using the django admin page, as a superuser / admin i can login and view current users and their account status. I can also change the status of an account.
+
+    2. As an Admin of the site i want to be able to see new orders.
+
+        - Using the django admin page, as a superuser / admin i can view successful orders.
+    
+    3. As an admin of the site i want to be able to maintain the library of products -  adding , deleting and editing them etc.
+
+        - As an admin/superuser, i have extra options from the user icon in the top right of the screen. I can navigate to an add products page. I can also add products from the django admin panel.
+        
+        - Additonally i have extra options on the product detail page where i can edit / delete a product from the database straight from there.
+    
 
 
 
