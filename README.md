@@ -10,6 +10,20 @@
 
 #   [Deployed Site](https://cul-sports.herokuapp.com/)
 
+<img src="media/readme_images/am_i_responsive.png">
+
+## Summary
+
+Cúl is a website that sells GAA products. From football/hurling jersies from all 32 counties in Ireland to gaa accessories. Available products also include home gym equipment for training in the off season!
+
+<br>
+
+## Target Audience
+
+The target audience for the website is current GAA players and fans of football and hurling who want to support their counties.
+
+<br>
+
 ## User Experience (UX)
 <br>
 
@@ -217,7 +231,7 @@ In the user profile, users can see their recent order history. They can also edi
 
 
 <br>
-    
+
 -   ## Site Maintainer / Admin Goals
 
     1. As an Admin of the site i want to be able to see new users and their account status.
@@ -235,5 +249,50 @@ In the user profile, users can see their recent order history. They can also edi
         - Additonally i have extra options on the product detail page where i can edit / delete a product from the database straight from there.
     
 
+-   # Testing
+
+    -  I tested the website on Google Chrome, Internet Explore, Firefox, Safari and Edge.
+    -  I tested to make sure the website links and navigation are working correctly.
+    -  The website was tested on iPhone 8, X and 11 pro, iPad, Macbook, and Desktop by Me.
+    -  I asked friends to critique the site and make an account/purchases to ensure it was working from their device and to ensure it was a user friendly experience for them.
+
+
+# Frameworks, Libraries & Programs Used
+
+1. [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+    - Bootstrap was used to assist with the responsiveness and styling of the website.
+
+2. [Hover.css](https://ianlunn.github.io/Hover/)
+    - Hover.css is used give on the nav bar and on the homepage shop now button.
+
+3. [Google Fonts](https://fonts.google.com/)
+    - Google Fonts was used to import and make use of the "Lato" font into the style.css file which is used throughout the project.
+
+4. [Font Awesome](https://fontawesome.com/)
+    - Font Awesome was used for icons in the header and on buttons.
+
+5. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to Github.
+
+6. [GitHub](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git. It was also used to make a kanban board for the project issues.
+
+7. [Photoshop](https://www.adobe.com/ie/products/photoshop.html)
+    - Photoshop was used for resizing logos, images and editing for the website.
+
+8. [Balsamiq](https://balsamiq.com/)
+    - Balsamiq was used to create all of the wireframes during the design process.
+
+9. [AWS](https://aws.amazon.com/)
+    - Aws was used to store the static files for the website.
+
+10. [Heroku](https://www.heroku.com)
+    - Heroku was used to host the website.
+
+11. [Django](https://www.djangoproject.com/)
+    - Django was used to give the site a clean and pragmatic design.
+
+12. [Django|Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+    - Django crispy forms was used to render elegant forms on the website.
 
 
