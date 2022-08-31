@@ -31,6 +31,17 @@
             <p class="text-secondary">{{ post.body }}</p>
         </div>
     </div>
+    {% if request.user.is_superuser %}
+    <div class="row">
+        <div class="col d-flex align-content-center justify-content-center">
+            <small>
+                <a href="" class="btn btn-success">Edit</a>
+                <a href="" class="btn btn-danger">Delete</a>
+            </small>
+        </div>
+    </div>
+    <hr>
+    {% endif %}
     <div class="row">
         <div class="col d-flex">
             <a href="{% url 'blog' %}" class="btn btn-info ml-auto p-2" role="button">Back</a>

@@ -21,12 +21,23 @@
             <hr>
         </div>
     </div>
+    {% if request.user.is_superuser %}
+    <div class="row">
+        <div class="col d-flex align-content-center justify-content-center">
+            <small>
+                <a href="{% url 'add_blog' %}" class="btn btn-success">Add Post</a>
+            </small>
+        </div>
+    </div>
+    <hr>
+    {% endif %}
     <div class="row">
         <div class="col">
             {% for post in object_list %}
             <ul>
                 <li>
                     <a href="{% url 'blog_detail' post.pk %}">
+                        <img src="{{ post.image }}">
                         <h2 class="text-info">{{ post.title }} | {{ post.author }}</h2>
                     </a>
                     <p class="text-black">{{ post.body }}</p>
