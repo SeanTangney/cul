@@ -26,12 +26,9 @@
             <form method="POST" class="form mb-2 text-secondary" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
-                {% if field.name != 'image' %}
                 {{ field | as_crispy_field }}
-                {% else %}
-                {{ field }}
-                {% endif %}
                 {% endfor %}
+                {{ form.media }}
                 <span class="d-flex justify-content-center">
                     <button class="btn btn-success justify-content-center btn-primary rounded-0" type="submit">Add
                         Post</button>
@@ -41,4 +38,14 @@
         </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+    $('new-image').change(function () {
+        var file = $('#new-image')[0].files[0];
+        $('#filename').text(`Image will be changed to: ${file.name}`);
+    });
+</script>
 {% endblock %}

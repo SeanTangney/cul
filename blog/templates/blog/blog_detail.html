@@ -24,11 +24,17 @@
     <div class="row">
         <div class="col">
             <span>
-                <h2 class="text-info">{{ post.title }}<strong class="text-secondary"> |
+                {% if post.image %}
+                <div class="blog-image-container d-flex justify-content-center">
+                    <img class="card-img-top img-fluid w-75 h-50" src="{{ post.image.url }}" alt="{{ post.name }}">
+                </div>
+                {% endif %}
+                <h2 class="text-info">{{ post.title }}<strong> |
                     </strong><small>{{ post.author }}</small></h2>
             </span>
+            <p class="text-secondary">{{ post.post_on }}</p>
             <hr>
-            <p class="text-secondary">{{ post.body }}</p>
+            <div class="text-secondary">{{ post.body | safe }}</div>
         </div>
     </div>
     {% if request.user.is_superuser %}
@@ -36,7 +42,7 @@
         <div class="col d-flex align-content-center justify-content-center">
             <small>
                 <a href="{% url 'update_blog' post.pk %}" class="btn btn-success">Edit</a>
-                <a href="{% url 'delete_blog' post.pk%}" class="btn btn-danger">Delete</a>
+                <a href="{% url 'delete_blog' post.pk %}" class="btn btn-danger">Delete</a>
             </small>
         </div>
     </div>

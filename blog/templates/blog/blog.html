@@ -37,10 +37,15 @@
             <ul>
                 <li>
                     <a href="{% url 'blog_detail' post.pk %}">
-                        <img src="{{ post.image }}">
-                        <h2 class="text-info">{{ post.title }} | {{ post.author }}</h2>
+                        {% if post.image %}
+                        <div class="blog-image-container d-flex justify-content-center">
+                            <img class="card-img-top img-fluid w-75 h-50" src="{{ post.image.url }}"
+                                alt="{{ post.name }}">
+                        </div>
+                        {% endif %}
+                        <h2 class="text-info">{{ post.title }}<strong> | </strong><small>{{ post.author }}</small></h2>
+                        <p class="text-secondary">{{ post.post_on }}</p>
                     </a>
-                    <p class="text-black">{{ post.body }}</p>
                 </li>
             </ul>
             <hr>
