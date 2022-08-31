@@ -6,4 +6,5 @@ class CustomClearableFileInput(ClearableFileInput):
     clear_checkbox_lavel = ('Remove')
     initial_text = _('Current Image')
     input_text = _('')
-    template_name = 'products/templates/products/custom_widget_templates/custom_clearable_file_input.html'
+    template_name = (
+        'blog/custom_widget_templates/custom_clearable_file_input.html')

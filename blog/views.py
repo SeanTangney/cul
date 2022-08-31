@@ -1,5 +1,6 @@
 from django.views.generic import ListView, DetailView, CreateView
 from .models import Post
+from .forms import PostForm
 
 
 class CulBlog(ListView):
@@ -14,5 +15,5 @@ class BlogDetailView(DetailView):
 
 class AddBlogView(CreateView):
     model = Post
+    form_class = PostForm
     template_name = 'blog/add_blog.html'
-    fields = '__all__'

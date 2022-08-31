@@ -23,16 +23,21 @@
     </div>
     <div class="row">
         <div class="col">
-            <span>
-
-            </span>
-            <hr>
-            <p class="text-secondary"></p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col d-flex">
-            <a href="{% url 'blog' %}" class="btn btn-info ml-auto p-2" role="button">Back</a>
+            <form method="POST" class="form mb-2 text-secondary" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                {% if field.name != 'image' %}
+                {{ field | as_crispy_field }}
+                {% else %}
+                {{ field }}
+                {% endif %}
+                {% endfor %}
+                <span class="d-flex justify-content-center">
+                    <button class="btn btn-success justify-content-center btn-primary rounded-0" type="submit">Add
+                        Post</button>
+                    <a href="{% url 'blog' %}" class="btn btn-danger btn-secondary rounded-0" role="button">Cancel</a>
+                </span>
+            </form>
         </div>
     </div>
 </div>
