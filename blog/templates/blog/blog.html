@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %} Blog{% endblock %}
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay">
+</div>
+<div class="container w-50">
+
+    <div class="row">
+        <div class="col">
+            <h1 class="logo-font mb-4 text-info mt-4 text-center">Cúl Blog</h1>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            {% for post in object_list %}
+            <ul>
+                <li>
+                    <a href="{% url 'blog_detail' post.pk %}">
+                        <h2 class="text-info">{{ post.title }} | {{ post.author }}</h2>
+                    </a>
+                    <p class="text-black">{{ post.body }}</p>
+                </li>
+            </ul>
+            <hr>
+            {% endfor %}
+        </div>
+    </div>
+
+    {% endblock %}

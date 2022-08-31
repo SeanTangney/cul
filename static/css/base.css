@@ -134,6 +134,7 @@ a.category-badge>span.badge:hover {
 
 .delivery_banner {
     background-color: #5bc0de;
+    margin-top: 2vh;
 }
 
 input[name='q']::placeholder {
@@ -344,9 +345,8 @@ input[name='q']::placeholder {
         margin-top: 20vh;
     }
 
-    #delivery-banner h4 {
+    #delivery-banner {
         font-size: .9rem;
-        width: 100vw;
         margin: 0;
     }
 
