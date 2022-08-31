@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_title %} Blog | {{ post.title }}{% endblock %}
+{% block extra_title %} Blog | Delete {{ post.title }}{% endblock %}
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -17,7 +17,7 @@
 
     <div class="row">
         <div class="col">
-            <h1 class="logo-font mb-4 text-info mt-4 text-center">Cúl Blog</h1>
+            <h1 class="logo-font mb-4 text-info mt-4 text-center">Delete Post</h1>
             <hr>
         </div>
     </div>
@@ -32,20 +32,20 @@
         </div>
     </div>
     {% if request.user.is_superuser %}
+    <hr>
+    <h2 class="text-warning text-center">Are you sure you want to delete this post?</h2>
     <div class="row">
         <div class="col d-flex align-content-center justify-content-center">
             <small>
-                <a href="{% url 'update_blog' post.pk %}" class="btn btn-success">Edit</a>
-                <a href="{% url 'delete_blog' post.pk%}" class="btn btn-danger">Delete</a>
+                <form method="POST">
+                    {% csrf_token %}
+                    <button class="btn btn-danger">Delete Post</button>
+                    <a href="{% url 'blog' %}" class="btn btn-info">Cancel</a>
+                </form>
             </small>
         </div>
     </div>
     <hr>
     {% endif %}
-    <div class="row">
-        <div class="col d-flex">
-            <a href="{% url 'blog' %}" class="btn btn-info ml-auto p-2" role="button">Back</a>
-        </div>
-    </div>
 </div>
 {% endblock %}

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_title %} Blog | Add Post{% endblock %}
+{% block extra_title %} Blog | Edit Post{% endblock %}
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -17,7 +17,7 @@
 
     <div class="row">
         <div class="col">
-            <h1 class="logo-font mb-4 text-info mt-4 text-center">Add Post</h1>
+            <h1 class="logo-font mb-4 text-info mt-4 text-center">Edit Post</h1>
             <hr>
         </div>
     </div>
@@ -33,7 +33,7 @@
                 {% endif %}
                 {% endfor %}
                 <span class="d-flex justify-content-center">
-                    <button class="btn btn-success justify-content-center btn-primary rounded-0" type="submit">Add
+                    <button class="btn btn-success justify-content-center btn-primary rounded-0" type="submit">Update
                         Post</button>
                     <a href="{% url 'blog' %}" class="btn btn-danger btn-secondary rounded-0" role="button">Cancel</a>
                 </span>
