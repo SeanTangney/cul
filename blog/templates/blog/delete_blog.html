@@ -17,18 +17,23 @@
 
     <div class="row">
         <div class="col">
-            <h1 class="logo-font mb-4 text-info mt-4 text-center">Delete Post</h1>
+            <h1 class="logo-font mb-4 text-info mt-4 text-center">Cúl Blog</h1>
             <hr>
         </div>
     </div>
     <div class="row">
         <div class="col">
             <span>
-                <h2 class="text-info">{{ post.title }}<strong class="text-secondary"> |
+                <h2 class="text-info">{{ post.title }}<strong> |
                     </strong><small>{{ post.author }}</small></h2>
+                <p class="text-secondary">{{ post.post_on }}</p>
+                {% if post.image %}
+                <div class="blog-image-container d-flex justify-content-center">
+                    <img class="card-img-top img-fluid w-75 h-50" src="{{ post.image.url }}" alt="{{ post.name }}">
+                </div>
+                {% endif %}
             </span>
-            <hr>
-            <p class="text-secondary">{{ post.body }}</p>
+            <div class="text-secondary">{{ post.body | safe }}</div>
         </div>
     </div>
     {% if request.user.is_superuser %}

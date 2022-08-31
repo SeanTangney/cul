@@ -2,6 +2,10 @@
 {% load static %}
 
 {% block extra_title %} Blog{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
 {% block page_header %}
 <div class="container header-container">
     <div class="row">
@@ -43,7 +47,9 @@
                                 alt="{{ post.name }}">
                         </div>
                         {% endif %}
-                        <h2 class="text-info">{{ post.title }}<strong> | </strong><small>{{ post.author }}</small></h2>
+                        <h2 class="text-info">{{ post.title }}<br><small class="text-secondary">Author:
+                                {{ post.author }}</small>
+                        </h2>
                         <p class="text-secondary">{{ post.post_on }}</p>
                     </a>
                 </li>
@@ -52,5 +58,4 @@
             {% endfor %}
         </div>
     </div>
-
     {% endblock %}
