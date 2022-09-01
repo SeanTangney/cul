@@ -20,7 +20,7 @@
 <div class="container">
 
     <div class="row">
-        <div class="col">
+        <div class="col mt-2">
             <h1 class="logo-font mb-4 text-info text-center">Cúl Blog</h1>
             <hr>
         </div>
@@ -46,8 +46,7 @@
     {% endif %}
 
     <div class="row">
-        <div class="col"></div>
-        <div class="col-sm-12 col-md-8 align-content-center">
+        <div class="col-sm-12 col-md-8">
             {% for post in object_list %}
             <ul>
                 <li>
@@ -67,7 +66,7 @@
             </ul>
             <hr>
             {% endfor %}
+            <div class="col"></div>
         </div>
-        <div class="col"></div>
     </div>
     {% endblock %}
