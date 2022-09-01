@@ -1,0 +1,102 @@
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+.StripeElement,
+.stripe-style-input {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 #5bc0de;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+    box-shadow: 0 1px 3px 0 #5bc0de;
+}
+
+.StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #5bc0de;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: #000;
+    border: 1px solid #5bc0de;
+}
+
+select,
+select option {
+    color: #5bc0de;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #4d7e97 !important;
+}
+
+
+/* ----------------------------------------Loading Spinner */
+/* https://www.w3schools.com/howto/howto_css_loader.asp */
+
+#loading-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(91, 192, 222, .4);
+    z-index: 9999;
+}
+
+.loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
+
+.spinner {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,373 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/static/site_images/background_image.webp') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #fff;
+    font-family: 'Lato';
+}
+
+.logo {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: capitalize;
+    color: #EDE3E9;
+}
+
+.main-nav {
+    height: 2rem;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background-color: #fff;
+    color: #1f2abe;
+    min-width: 260px;
+}
+
+.shop-now-box {
+    background-color: rgb(21, 39, 67, 0.8);
+    border: 1px solid #5bc0de;
+    margin-top: 3em;
+    border-radius: 10px;
+}
+
+
+.btn-black {
+    background: black;
+    color: #fff;
+}
+
+
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #5bc0de;
+    color: #fff;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus {
+    background: #1f2abe;
+    color: #fff;
+}
+
+
+.text-black {
+    color: black !important;
+}
+
+
+.btn-outline-black {
+    background: white;
+    color: #5bc0de !important;
+    border: 1px solid #5bc0de;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: #5bc0de;
+    color: #fff !important;
+}
+
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+
+.nav-menu {
+    text-align: right;
+    margin-top: -65px;
+    padding: 20px, 0;
+    background: rgb(228, 237, 245);
+}
+
+
+.nav-menu:hover,
+.nav-menu:active,
+.nav-menu:focus {
+    background: #fff;
+    color: #fff;
+}
+
+a.category-badge>span.badge:hover {
+    background: #5bc0de !important;
+    color: black !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 2rem;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+
+.delivery_banner {
+    background-color: #5bc0de;
+    margin-top: 2vh;
+}
+
+input[name='q']::placeholder {
+    color: #6c757d;
+}
+
+/* ----------------------------------------------------- Toasts */
+
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+/* ----------------------------------------------------- Bag preview */
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* ----------------------------------------------------- Allauth templates styles */
+
+.allauth-form-inner-content p {
+    border-color: #6c757d;
+    margin-top: 1.5rem;
+}
+
+.allauth-form-inner-content input {
+    border-color: #5bc0de;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #737e86;
+}
+
+/* ----------------------- Standard bootstrap styling applied globally for allauth */
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+    /* btn */
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #5bc0de;
+    border: 1px solid #5bc0de;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #5bc0de;
+}
+
+.allauth-form-inner-content a {
+    color: #5bc0de;
+    /* text-info */
+}
+
+.allauth-form-inner-content {
+    color: #6c757d;
+    /* text-info */
+}
+
+
+/* ----------------------- Product Form */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    border-color: #6c757d;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    border-radius: 0;
+}
+
+
+
+/* ----------------------------------------------------- MEDIA QUERIES */
+
+/* Larger container on xl screens */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
+
+
+/* fixed top navbar only, medium size and up */
+
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 160px;
+    }
+
+    .nav-menu {
+        margin-top: -15px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    body {
+        height: calc(100vh - 116px);
+    }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: 0, .6rem;
+        font-size: 1rem;
+    }
+
+    .navbar-expand {
+        margin-top: -12px;
+    }
+
+    .nav-menu {
+        background-color: #fff;
+    }
+
+    .logo-font,
+    .text-info {
+        margin-top: 9vh;
+    }
+
+    .dropdown-menu a {
+        color: #5bc0de;
+    }
+
+    .shop-now-box {
+        margin-top: 20vh;
+    }
+
+    #delivery-banner {
+        font-size: .9rem;
+        margin: 0;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty,
+    .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+
+    .cul-blog-menu {
+        margin-bottom: 20px;
+    }
+
+}
