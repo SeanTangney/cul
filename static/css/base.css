@@ -309,6 +309,7 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
+        margin-top: 5px;
     }
 
     .display-4.logo-font.text-black {
@@ -349,9 +350,8 @@ input[name='q']::placeholder {
         margin-top: 20vh;
     }
 
-    #delivery-banner {
-        font-size: .9rem;
-        margin: 0;
+    .delivery-banner {
+        font-size: .7rem;
     }
 
     .btn.btn-outline-black.rounded-0,
