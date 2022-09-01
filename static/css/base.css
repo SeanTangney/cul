@@ -366,4 +366,8 @@ input[name='q']::placeholder {
         padding: .25rem .5rem !important;
     }
 
+    .cul-blog-menu {
+        margin-bottom: 20px;
+    }
+
 }
