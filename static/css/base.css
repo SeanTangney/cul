@@ -20,6 +20,7 @@ body {
     background: rgb(228, 237, 245);
     z-index: 9999999999999;
     width: 100%;
+
 }
 
 /* from Bulma */
@@ -107,15 +108,15 @@ body {
     text-align: right;
     margin-top: -65px;
     padding: 20px, 0;
-    background: rgb(228, 237, 245);
+    background: #fff;
+    color: #fff;
 }
 
 
 .nav-menu:hover,
 .nav-menu:active,
 .nav-menu:focus {
-    background: #fff;
-    color: #fff;
+    background: rgb(228, 237, 245);
 }
 
 a.category-badge>span.badge:hover {
