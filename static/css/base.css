@@ -37,6 +37,10 @@ body {
     margin-left: -20px;
 }
 
+#mc-embedded-subscribe-form {
+    width: 100vw;
+}
+
 
 /* from Bulma */
 .icon {

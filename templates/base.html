@@ -53,8 +53,6 @@
     <!-------------- Stripe -------------->
     <script src="https://js.stripe.com/v3/"></script>
     <!-------------- Mailchimp-------------->
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-
     {% endblock %}
 
     {% block extra_js %}
@@ -186,45 +184,10 @@
                         <h2 class="text-info mt-5">Subscribe!</h2>
                         <p class="text-secondary">Get exclusive offers and discount codes by subscribing to our monthly
                             newsletter</p>
-                        <!-- Mailchimp start -->
-                        <!-- Begin Mailchimp Signup Form -->
 
-                        <div id="mc_embed_signup">
-                            <form
-                                action="https://herokuapp.us17.list-manage.com/subscribe/post?u=bbee3322e6627549482e962ed&amp;id=4aa1b1055d&amp;f_id=00674ae0f0"
-                                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                                class="validate" target="_blank" novalidate>
-                                <div id="mc_embed_signup_scroll">
-                                </div>
-                                <div class="mc-field-group col-6 col-lg-12">
-                                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
-                                    </label>
-                                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
-                                        required>
-                                    <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
-                                </div>
-                                <!-- <div id="mce-responses" class="clear">
-                                    <div class="response" id="mce-error-response" style="display:none"></div>
-                                    <div class="response" id="mce-success-response" style="display:none"></div>
-                                </div> -->
-                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                        name="b_bbee3322e6627549482e962ed_4aa1b1055d" tabindex="-1" value=""></div>
-                                <div class="optionalParent">
-                                    <div class="clear foot">
-                                        <input type="submit" value="Subscribe" name="subscribe"
-                                            id="mc-embedded-subscribe" class="button">
-                                    </div>
-                                </div>
-                        </div>
-                        </form>
-                        <div class="row my-5"></div>
                     </div>
-                    <!--End mc_embed_signup-->
-                    <!-- Mailchimp End -->
                 </div>
-        </div>
-        </section>
+            </section>
         </div>
     </footer>
     <!-- /.footer -->
@@ -235,7 +198,7 @@
         $('.toast').toast('show');
     </script>
 
-    <script type='text/javascript'>
+    <!-- <script type='text/javascript'>
         (function ($) {
             window.fnames = new Array();
             window.ftypes = new Array();
@@ -253,6 +216,13 @@
             ftypes[5] = 'birthday';
         }(jQuery));
         var $mcj = jQuery.noConflict(true);
+    </script> -->
+    <script id="mcjs">
+        ! function (c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(
+                m, p)
+        }(document, "script",
+            "https://chimpstatic.com/mcjs-connected/js/users/bbee3322e6627549482e962ed/76479754b279b3d00edafb562.js");
     </script>
     {% endblock %}
 
