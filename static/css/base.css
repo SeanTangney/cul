@@ -15,6 +15,23 @@ body {
     width: 2.5rem;
 }
 
+.footer-container {
+    background: rgb(228, 237, 245);
+    z-index: 9999999999999;
+}
+
+/* Mail Chimp */
+
+#mc_embed_signup {
+    background: rgb(228, 237, 245);
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    color: #9FA6B2;
+    width: 600px;
+    padding: 0;
+}
+
+
 /* from Bulma */
 .icon {
     align-items: center;
