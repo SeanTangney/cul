@@ -9,7 +9,7 @@ class Post(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     title = models.CharField(max_length=255)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    body = RichTextField(blank=True, null=True)
+    body = RichTextField(blank=True, null=True, config_name='default')
     post_on = models.DateField(auto_now_add=True)
 
     def __str__(self):
