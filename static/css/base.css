@@ -18,6 +18,7 @@ body {
 .footer-container {
     background: rgb(228, 237, 245);
     z-index: 9999999999999;
+    width: 100%;
 }
 
 /* Mail Chimp */
@@ -29,6 +30,10 @@ body {
     color: #9FA6B2;
     width: 600px;
     padding: 0;
+}
+
+.mc-field-group {
+    margin-left: -20px;
 }
 
 

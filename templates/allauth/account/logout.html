@@ -6,8 +6,6 @@
 
 {% block inner_content %}
 <br>
-<br>
-<br>
 
 <div class="row d-flex">
   <div class="col justify-content-center align-content-center mt-5">
@@ -16,7 +14,7 @@
 
     <p>{% trans 'Are you sure you want to sign out?' %}</p>
 
-    <form method="post" action="{% url 'account_logout' %}">
+    <form method="post" action="{% url 'account_logout' %}" class="mb-5">
       {% csrf_token %}
       {% if redirect_field_value %}
       <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
@@ -25,5 +23,8 @@
     </form>
   </div>
 </div>
+<br>
+<br>
+<br>
 
 {% endblock %}
