@@ -22,7 +22,10 @@ Cúl is a website that sells GAA products. From football/hurling jersies from al
 
 The target audience for the website is current GAA players and fans of football and hurling who want to support their counties.
 
+In Ireland there are 32 counties and every county has a football and hurling team. A lot of people own their native county jerseys and most people play football or hurling at some point in their life.
+
 <br>
+
 
 ## User Experience (UX)
 <br>
@@ -42,6 +45,7 @@ The target audience for the website is current GAA players and fans of football 
         3. As a Site User, I want to be able to easily login or logout, so that i can Access my personal account information..
         4. As a Site User, I want to be able to reset my password if i forget it.
         5. As a Site User, I want to be able to Receive confirmation email after registration , so that i can Verify that my account registration was successful.
+        6. As a site user, I want to see and read relevant blog posts so i can learn more about the Gaa.
 
 
     -   #### Returning Visitor Goals
@@ -56,6 +60,7 @@ The target audience for the website is current GAA players and fans of football 
         1. As an Admin of the site i want to be able to see new users and their account status.
         2. As an Admin of the site i want to be able to see new orders.
         3. As an admin of the site i want to be able to maintain the library of products, adding,deleting and editing them etc.
+        4. As an admin, I want to be able to make blog posts so that i can advertise products to the user through them.
 
 <hr>
 <div>
@@ -111,15 +116,21 @@ The target audience for the website is current GAA players and fans of football 
 
 <hr>
 
-## Features
+# User Features
 
-On first entry of the site, a user will see the nice backgorund of Croke Park Stadium and will be prompted to view current Senior Jerseys.
+On first entry of the site, a user will see the nice backgorund of Croke Park Stadium and will be prompted to view current Senior Jerseys. They will also get a model popup asking if they would like to join the mailing list.
 <details>
     <summary>Homepage</summary>
     <img src="media/readme_images/homepage_screenshot.png">
 </details>
 <hr>
-In the products page, a user has the option of navigating from the dropdown menu, the category indicators and they can also sort the products any way the choose.
+At the bottom of the website there is a footer. It contains a link to the Cúl Sports Facebook page, a link to sign up to the newsletter and also the websites privacy policy.
+<details>
+    <summary>Footer</summary>
+    <img src="">
+</details>
+<hr>
+In the products page, a user has the option of navigating from the dropdown menu, the category indicators and they can also sort the products any way they choose.
 <details>
     <summary>Product Page</summary>
     <img src="media/readme_images/products1_screenshot.png">
@@ -158,6 +169,34 @@ In the user profile, users can see their recent order history. They can also edi
     <img src="media/readme_images/myprofile_screenshot.png">
 </details>
 <hr>
+Users can use the nav menu to go to the Cúl Blog. Here they can find relevant Gaa articles. Within these articles will be links back to the store where they can purchase relevant jerseys.
+<details>
+    <summary>Blog</summary>
+    <img src="">
+</details>
+<hr>
+
+# Admin Features
+
+Admin ad superusers get access to the Django Admin panel. Here they can update products, blogposts, review orders and check user's status.
+<details>
+    <summary>Admin Panel</summary>
+    <img src="">
+</details>
+<hr>
+An Admin/Superuser for the website can access a product management page. Here they can add a product straight from the website without having to use the Django Admin panel. They also get access to the edit/delete buttons on the product detail page.
+<details>
+    <summary>Admin - Products</summary>
+    <img src="">
+</details>
+<hr>
+An Admin/SuperUser can access the Add Blogpost Page. They also get access the edit blog post and delete blogpost features on the blog detail page. There is a Rich Text Editor installed to allow for better styling when adding blog posts.
+<details>
+    <summary>Blog</summary>
+    <img src="">
+</details>
+<hr>
+
 
 <br>
 <br>
@@ -209,6 +248,10 @@ In the user profile, users can see their recent order history. They can also edi
 
         - An email will be sent to new users upon registration to verify their account.
 
+    6. As a site user, I want to see and read relevant blog posts so i can learn more about the Gaa.
+
+        - It is evident from the blog posts that people who are interested in or want to get to know more about the gaa will be drawn to it. 
+
 <br>
 
 -   ## Returning Visitor Goals
@@ -247,12 +290,16 @@ In the user profile, users can see their recent order history. They can also edi
         - As an admin/superuser, i have extra options from the user icon in the top right of the screen. I can navigate to an add products page. I can also add products from the django admin panel.
         
         - Additonally i have extra options on the product detail page where i can edit / delete a product from the database straight from there.
+
+    4. As an admin, I want to be able to make blog posts so that i can advertise products to the user through them.
+
+        - It is very easy for an admin to write a blog post on the site. It is also good advertising for jerseys becuase if someone is interested enough to read an article about a particular match then they will probably be interested in buying a jersey that one of those teams wear.
     
 
 -   # Testing
 
-    -  I tested the website on Google Chrome, Internet Explore, Firefox, Safari and Edge.
-    -  I tested to make sure the website links and navigation are working correctly.
+    -  I tested the website on Google Chrome, Firefox, and Edge.
+    -  I tested to make sure the website links and navigation are working correctly and all external links are opened in a new tab.
     -  The website was tested on iPhone 8, X and 11 pro, iPad, Macbook, and Desktop by Me.
     -  I asked friends to critique the site and make an account/purchases to ensure it was working from their device and to ensure it was a user friendly experience for them.
 
@@ -294,5 +341,10 @@ In the user profile, users can see their recent order history. They can also edi
 
 12. [Django|Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
     - Django crispy forms was used to render elegant forms on the website.
+
+13. [Django|CKeditor](https://pypi.org/project/django-ckeditor/)
+    - Django CKeditor was used as a rich text editor for the blog.
+
+
 
 
