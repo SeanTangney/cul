@@ -16,28 +16,34 @@
 <div class="container">
     <div class="row">
         <br>
+        <div class="col-md-3"></div>
         <div class="col-12 col-md-6 mt-5">
             <h2 class="logo-font mb-4 text-info mt-4">Product Management</h2>
             <h5 class="text-secondary text-uppercase">Edit a product</h5>
             <hr>
         </div>
+        <div class="col md-3"></div>
     </div>
-    <div class="col-12 col-md-6">
-        <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2 text-secondary"
-            enctype="multipart/form-data">
-            {% csrf_token %}
-            {% for field in form %}
-            {% if field.name != 'image' %}
-            {{ field | as_crispy_field }}
-            {% else %}
-            {{ field }}
-            {% endif %}
-            {% endfor %}
-            <div class="text-right">
-                <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
-                <button class="btn btn-info rounded-0" type="submit">Update Product</button>
-            </div>
-        </form>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-12 col-md-6">
+            <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2 text-secondary"
+                enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                {% if field.name != 'image' %}
+                {{ field | as_crispy_field }}
+                {% else %}
+                {{ field }}
+                {% endif %}
+                {% endfor %}
+                <div class="text-right">
+                    <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
+                    <button class="btn btn-info rounded-0" type="submit">Update Product</button>
+                </div>
+            </form>
+            <div class="col-md-3"></div>
+        </div>
     </div>
 </div>
 {% endblock %}
