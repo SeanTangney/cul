@@ -103,6 +103,14 @@ In Ireland there are 32 counties and every county has a football and hurling tea
     <summary>Order Confirmation</summary>
     <img src="media/readme_images/WireframesOrderConfirmation.png">
 </details>
+<details>
+    <summary>Blog</summary>
+    <img src="media/readme_images/WireframesCulBlog.png">
+</details>
+<details>
+    <summary>Blog Details</summary>
+    <img src="media/readme_images/Wireframesblogdetail.png">
+</details>
 </div>
 <hr>
 
@@ -121,22 +129,23 @@ In Ireland there are 32 counties and every county has a football and hurling tea
 On first entry of the site, a user will see the nice backgorund of Croke Park Stadium and will be prompted to view current Senior Jerseys. They will also get a model popup asking if they would like to join the mailing list.
 <details>
     <summary>Homepage</summary>
-    <img src="media/readme_images/homepage_screenshot.png">
+    <img src="media/readme_images/homepage.png">
+    <img src="media/readme_images/mailing_list.png">
 </details>
 <hr>
 At the bottom of the website there is a footer. It contains a link to the Cúl Sports Facebook page, a link to sign up to the newsletter and also the websites privacy policy.
 <details>
     <summary>Footer</summary>
-    <img src="">
+    <img src="media/readme_images/footer.png">
 </details>
 <hr>
 In the products page, a user has the option of navigating from the dropdown menu, the category indicators and they can also sort the products any way they choose.
 <details>
     <summary>Product Page</summary>
-    <img src="media/readme_images/products1_screenshot.png">
-    <img src="media/readme_images/products_screenshot.png">
-    <img src="media/readme_images/products2_screenshot.png">
-    <img src="media/readme_images/products3_screenshot.png">
+    <img src="media/readme_images/product_page.png">
+    <img src="media/readme_images/nav_menu.png">
+    <img src="media/readme_images/categories.png">
+    <img src="media/readme_images/sort_by.png">
 </details>
 <hr>
 A user can click on a product to see a description and add it to the cart.
