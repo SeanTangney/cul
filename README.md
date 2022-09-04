@@ -158,51 +158,53 @@ A user can click on a product to see a description and add it to the cart.
 A user can go to the checkout and review what they are about to purchase if they have anything in the bag. Here they can fill in the form with their delivery details, and payment info and go through with their order.
 <details>
     <summary>Checkout Page</summary>
-    <img src="media/readme_images/checkout_1.png">
-    <img src="media/readme_images/checkout2_screenshot.png">
+    <img src="media/readme_images/checkout.png">
+    <img src="media/readme_images/checkout2.png">
 </details>
 <hr>
 While its possible for users to checkout without being registered, frequent users can make an account and see their order history and store their delivery details.
 <details>
     <summary>Checkout Page</summary>
-    <img src="media/readme_images/signin_up_screenshot.png">
-    <img src="media/readme_images/sign_up.png">
     <img src="media/readme_images/sign_in.png">
-    <img src="media/readme_images/sign_in_toast.png">
-    <img src="media/readme_images/order_review.png">
+    <img src="media/readme_images/sign_up.png">
 </details>
 <hr>
 In the user profile, users can see their recent order history. They can also edit their saved user details.
 <details>
     <summary>User Profile</summary>
-    <img src="media/readme_images/myprofile_screenshot.png">
+    <img src="media/readme_images/profile.png">
 </details>
 <hr>
 Users can use the nav menu to go to the Cúl Blog. Here they can find relevant Gaa articles. Within these articles will be links back to the store where they can purchase relevant jerseys.
 <details>
     <summary>Blog</summary>
-    <img src="">
+    <img src="media/readme_images/blog.png">
+    <img src="media/readme_images/blog2.png">
 </details>
 <hr>
 
 # Admin Features
 
-Admin ad superusers get access to the Django Admin panel. Here they can update products, blogposts, review orders and check user's status.
+Admin and superusers get access to the Django Admin panel. Here they can update products, blogposts, review orders and check user's status.
 <details>
     <summary>Admin Panel</summary>
-    <img src="">
+    <img src="media/readme_images/admin_panel.png">
 </details>
 <hr>
 An Admin/Superuser for the website can access a product management page. Here they can add a product straight from the website without having to use the Django Admin panel. They also get access to the edit/delete buttons on the product detail page.
 <details>
     <summary>Admin - Products</summary>
-    <img src="">
+    <img src="media/readme_images/add_product.png">
+    <img src="media/readme_images/add_product2.png">
+    <img src="media/readme_images/superuser_product_detail.png">
 </details>
 <hr>
 An Admin/SuperUser can access the Add Blogpost Page. They also get access the edit blog post and delete blogpost features on the blog detail page. There is a Rich Text Editor installed to allow for better styling when adding blog posts.
 <details>
     <summary>Blog</summary>
-    <img src="">
+    <img src="media/readme_images/add_blog.png">
+    <img src="media/readme_images/superuser_blog_detail.png">
+    <img src="media/readme_images/superuser_blog.png">
 </details>
 <hr>
 
@@ -354,6 +356,8 @@ An Admin/SuperUser can access the Add Blogpost Page. They also get access the ed
 13. [Django|CKeditor](https://pypi.org/project/django-ckeditor/)
     - Django CKeditor was used as a rich text editor for the blog.
 
+13. [Json Formatter](https://jsonformatter.org/)
+    - Json formatter was to create my own product fixtures.
 
 
 
