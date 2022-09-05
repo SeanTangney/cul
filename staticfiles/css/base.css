@@ -8,11 +8,24 @@ body {
     height: calc(100vh - 164px);
     color: #fff;
     font-family: 'Lato';
+    overflow-x: hidden;
 }
 
 .logo {
     height: 2.5rem;
     width: 2.5rem;
+}
+
+.footer-container {
+    background: #e4edf5;
+    z-index: 999999999;
+    width: 100%;
+}
+
+/* Custom Error Page */
+
+.error-container {
+    background: #6c757dd2;
 }
 
 /* from Bulma */
@@ -100,15 +113,15 @@ body {
     text-align: right;
     margin-top: -65px;
     padding: 20px, 0;
-    background: rgb(228, 237, 245);
+    background: #fff;
+    color: #fff;
 }
 
 
 .nav-menu:hover,
 .nav-menu:active,
 .nav-menu:focus {
-    background: #fff;
-    color: #fff;
+    background: rgb(228, 237, 245);
 }
 
 a.category-badge>span.badge:hover {
@@ -139,6 +152,10 @@ a.category-badge>span.badge:hover {
 
 input[name='q']::placeholder {
     color: #6c757d;
+}
+
+.blog-list {
+    padding: 0
 }
 
 /* ----------------------------------------------------- Toasts */
@@ -301,10 +318,14 @@ input[name='q']::placeholder {
     }
 }
 
+/* Up to Medium */
+
+
 @media (max-width: 991px) {
 
     body {
         height: calc(100vh - 116px);
+        margin-top: 5px;
     }
 
     .display-4.logo-font.text-black {
@@ -345,9 +366,8 @@ input[name='q']::placeholder {
         margin-top: 20vh;
     }
 
-    #delivery-banner {
-        font-size: .9rem;
-        margin: 0;
+    .delivery-banner {
+        font-size: .7rem;
     }
 
     .btn.btn-outline-black.rounded-0,
