@@ -319,8 +319,12 @@ An Admin/SuperUser can access the Add Blogpost Page. They also get access the ed
 -  I tested to make sure the website links and navigation are working correctly and all external links are opened in a new tab.
 -  The website was tested on iPhone 8, X and 11 pro, iPad, Macbook, and Desktop by Me.
 -  I asked friends to critique the site and make an account/purchases to ensure it was working from their device and to ensure it was a user friendly experience for them.
+- I used [W3C](https://validator.w3.org/) to validate my HTML and all passed
+- I used [Jigsaw](https://jigsaw.w3.org/css-validator/) to validate my CSS and all passed
+
 <br>
 <br>
+
 # Manual Testing
 
 The following manual tests have been carried out by me without any issues.
@@ -486,6 +490,32 @@ I researched on google and on wordtracker to see what keywords would best suit m
 </details>
 <hr>
 
+# Deployment
+
+## Deploying to github
+
+1. Check requirements.txt file by running the following command in the terminal: pip3 freeze > requirements.txt
+2. Check project has been fully committed and pushed to git.
+3. On heroku create a new app.
+4. Name your app.
+5. Go to settings
+6. Go to config vars and click reveal config vars
+7. Select python as a build pack.
+8. Select node.js and click save.
+9. Press deploy
+10. From the deployment method select GitHub
+11. Click connect to github.
+12. Search for your project name and connect to it.
+13. Deploy branch.
+14. Open App at the top.
+
+## Deploying to AWS
+
+When deploying to AWS i used the [AWS_CHEAT_SHEET](https://codeinstitute.s3.amazonaws.com/fullstack/AWS%20changes%20sheet.pdf) From Code institute
+
+
+
+
 # Frameworks, Libraries & Programs Used
 
 1. [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
@@ -527,8 +557,18 @@ I researched on google and on wordtracker to see what keywords would best suit m
 13. [Django|CKeditor](https://pypi.org/project/django-ckeditor/)
     - Django CKeditor was used as a rich text editor for the blog.
 
-13. [Json Formatter](https://jsonformatter.org/)
+14. [Json Formatter](https://jsonformatter.org/)
     - Json formatter was to create my own product fixtures.
+
+15. [Autoprefixer Css Online](https://autoprefixer.github.io/)
+    - This was used to optimize cross browser support.
+
+16. [Postgres](https://www.postgresql.org/)
+    - This was used for the database
+
+17. [AWS](https://aws.amazon.com/)
+    - This was used to host for my static files
+
 
 
 ## Credits 
@@ -537,11 +577,16 @@ I researched on google and on wordtracker to see what keywords would best suit m
 - I up my made my own fixtures and categories for the website. All product images were taken from [O'neills](https://www.oneills.com/) except for the waterford jerseys, taken from [Azzurri](https://azzurri.ie/), the Armagh and Leitrim jerseys taken from [McKeever](https://www.mckeeverteamwear.com/).
 - I took the background image from [Gaa.ie](https://gaa.ie). 
 
+### Articles for Blog
+- [Kerry V Galway](https://www.irishmirror.ie/sport/gaa/gaelic-football/kerry-v-galway-head-head-27553750)
+- [Limerick V Kilkenny](https://news.paddypower.com/gaa/2022/07/17/gaa-tips-john-mullanes-best-bets-for-limerick-v-kilkenny-all-ireland-hurling-final/)
+- [Derry V Galway](https://www.skysports.com/gaa/gaelic-football/news/30553/12646017/derry-and-galway-flying-as-opportunity-knocks-in-all-ireland-semi-final-peter-canavan-column)
+
 ### Tutorials
 - I used the boutique ado tutorials for help.
 - I used [CodeWithStein](https://www.youtube.com/c/CodeWithStein) tutorials for help with general django and blog problems.
 - I used [StackOverflow](https://stackoverflow.com/) when debugging.
 
-### 
+### Special Thanks 
 - Thanks to CodeInstitute tutor support for helping me with code related issues.
 - Thanks to my Mentor for continuous guidence.

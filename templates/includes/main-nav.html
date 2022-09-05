@@ -7,8 +7,8 @@
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="all-products-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" id="all-products-link">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -18,57 +18,59 @@
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="all-products-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" id="county-link">
                 County
             </a>
-            <div class="dropdown-menu border-0 justify-content-sm-auto" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0 justify-content-sm-auto" aria-labelledby="county-link">
                 <table>
-                    <td>
-                        <a href="{% url 'products' %}?q=antrim" class="dropdown-item">Antrim</a>
-                        <a href="{% url 'products' %}?q=armagh" class="dropdown-item">Armagh</a>
-                        <a href="{% url 'products' %}?q=carlow" class="dropdown-item">Carlow</a>
-                        <a href="{% url 'products' %}?q=cavan" class="dropdown-item">Cavan</a>
-                        <a href="{% url 'products' %}?q=clare" class="dropdown-item">Clare</a>
-                        <a href="{% url 'products' %}?q=cork" class="dropdown-item">Cork</a>
-                        <a href="{% url 'products' %}?q=derry" class="dropdown-item">Derry</a>
-                        <a href="{% url 'products' %}?q=donegal" class="dropdown-item">Donegal</a>
-                        <a href="{% url 'products' %}?q=down" class="dropdown-item">Down</a>
-                        <a href="{% url 'products' %}?q=dublin" class="dropdown-item">Dublin</a>
-                        <a href="{% url 'products' %}?q=fermanagh" class="dropdown-item">Fermanagh</a>
-                        <a href="{% url 'products' %}?q=galway" class="dropdown-item">Galway</a>
-                        <a href="{% url 'products' %}?q=kerry" class="dropdown-item">Kerry</a>
-                        <a href="{% url 'products' %}?q=kildare" class="dropdown-item">Kildare</a>
-                        <a href="{% url 'products' %}?q=kilkenny" class="dropdown-item">Kilkenny</a>
-                        <a href="{% url 'products' %}?q=laois" class="dropdown-item">Laois</a>
-                    </td>
-                    <td>
-                        <a href="{% url 'products' %}?q=leitrim" class="dropdown-item">Leitrim</a>
-                        <a href="{% url 'products' %}?q=limerick" class="dropdown-item">Limerick</a>
-                        <a href="{% url 'products' %}?q=longford" class="dropdown-item">Longford</a>
-                        <a href="{% url 'products' %}?q=louth" class="dropdown-item">Louth</a>
-                        <a href="{% url 'products' %}?q=mayo" class="dropdown-item">Mayo</a>
-                        <a href="{% url 'products' %}?q=meath" class="dropdown-item">Meath</a>
-                        <a href="{% url 'products' %}?q=monaghan" class="dropdown-item">Monaghan</a>
-                        <a href="{% url 'products' %}?q=offaly" class="dropdown-item">Offaly</a>
-                        <a href="{% url 'products' %}?q=roscomman" class="dropdown-item">Roscomman</a>
-                        <a href="{% url 'products' %}?q=sligo" class="dropdown-item">Sligo</a>
-                        <a href="{% url 'products' %}?q=tipperary" class="dropdown-item">Tipperary</a>
-                        <a href="{% url 'products' %}?q=tyrone" class="dropdown-item">Tyrone</a>
-                        <a href="{% url 'products' %}?q=waterford" class="dropdown-item">Waterford</a>
-                        <a href="{% url 'products' %}?q=westmeath" class="dropdown-item">Westmeath</a>
-                        <a href="{% url 'products' %}?q=wexford" class="dropdown-item">Wexford</a>
-                        <a href="{% url 'products' %}?q=wicklow" class="dropdown-item">Wicklow</a>
-                    </td>
+                    <tr>
+                        <td>
+                            <a href="{% url 'products' %}?q=antrim" class="dropdown-item">Antrim</a>
+                            <a href="{% url 'products' %}?q=armagh" class="dropdown-item">Armagh</a>
+                            <a href="{% url 'products' %}?q=carlow" class="dropdown-item">Carlow</a>
+                            <a href="{% url 'products' %}?q=cavan" class="dropdown-item">Cavan</a>
+                            <a href="{% url 'products' %}?q=clare" class="dropdown-item">Clare</a>
+                            <a href="{% url 'products' %}?q=cork" class="dropdown-item">Cork</a>
+                            <a href="{% url 'products' %}?q=derry" class="dropdown-item">Derry</a>
+                            <a href="{% url 'products' %}?q=donegal" class="dropdown-item">Donegal</a>
+                            <a href="{% url 'products' %}?q=down" class="dropdown-item">Down</a>
+                            <a href="{% url 'products' %}?q=dublin" class="dropdown-item">Dublin</a>
+                            <a href="{% url 'products' %}?q=fermanagh" class="dropdown-item">Fermanagh</a>
+                            <a href="{% url 'products' %}?q=galway" class="dropdown-item">Galway</a>
+                            <a href="{% url 'products' %}?q=kerry" class="dropdown-item">Kerry</a>
+                            <a href="{% url 'products' %}?q=kildare" class="dropdown-item">Kildare</a>
+                            <a href="{% url 'products' %}?q=kilkenny" class="dropdown-item">Kilkenny</a>
+                            <a href="{% url 'products' %}?q=laois" class="dropdown-item">Laois</a>
+                        </td>
+                        <td>
+                            <a href="{% url 'products' %}?q=leitrim" class="dropdown-item">Leitrim</a>
+                            <a href="{% url 'products' %}?q=limerick" class="dropdown-item">Limerick</a>
+                            <a href="{% url 'products' %}?q=longford" class="dropdown-item">Longford</a>
+                            <a href="{% url 'products' %}?q=louth" class="dropdown-item">Louth</a>
+                            <a href="{% url 'products' %}?q=mayo" class="dropdown-item">Mayo</a>
+                            <a href="{% url 'products' %}?q=meath" class="dropdown-item">Meath</a>
+                            <a href="{% url 'products' %}?q=monaghan" class="dropdown-item">Monaghan</a>
+                            <a href="{% url 'products' %}?q=offaly" class="dropdown-item">Offaly</a>
+                            <a href="{% url 'products' %}?q=roscomman" class="dropdown-item">Roscomman</a>
+                            <a href="{% url 'products' %}?q=sligo" class="dropdown-item">Sligo</a>
+                            <a href="{% url 'products' %}?q=tipperary" class="dropdown-item">Tipperary</a>
+                            <a href="{% url 'products' %}?q=tyrone" class="dropdown-item">Tyrone</a>
+                            <a href="{% url 'products' %}?q=waterford" class="dropdown-item">Waterford</a>
+                            <a href="{% url 'products' %}?q=westmeath" class="dropdown-item">Westmeath</a>
+                            <a href="{% url 'products' %}?q=wexford" class="dropdown-item">Wexford</a>
+                            <a href="{% url 'products' %}?q=wicklow" class="dropdown-item">Wicklow</a>
+                        </td>
+                    </tr>
                 </table>
             </div>
         </li>
         <li class="nav-item dropdown">
-            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="all-products-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" id="clothing-link">
                 Clothing
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="{% url 'products' %}?category=jerseys" class="dropdown-item">Jerseys</a>
                 <a href="{% url 'products' %}?category=training_top" class="dropdown-item">Training Tops</a>
                 <a href="{% url 'products' %}?category=jerseys,training_top" class="dropdown-item">All Clothing</a>
@@ -76,11 +78,11 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" id="all-products-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a href="#" class="logo-font font-weight-bold nav-link text-black mr-5" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false" id="equipment-link">
                 Equipment
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0" aria-labelledby="equipment-link">
                 <a href="{% url 'products' %}?category=accessories" class="dropdown-item">Accessories</a>
                 <a href="{% url 'products' %}?category=equipment" class="dropdown-item">Equipment</a>
                 <a href="{% url 'products' %}?category=home_gym" class="dropdown-item">Home Gym Equipment</a>
