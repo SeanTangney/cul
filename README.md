@@ -307,13 +307,140 @@ An Admin/SuperUser can access the Add Blogpost Page. They also get access the ed
         - It is very easy for an admin to write a blog post on the site. It is also good advertising for jerseys becuase if someone is interested enough to read an article about a particular match then they will probably be interested in buying a jersey that one of those teams wear.
     
 
--   # Testing
+# Testing
 
-    -  I tested the website on Google Chrome, Firefox, and Edge.
-    -  I tested to make sure the website links and navigation are working correctly and all external links are opened in a new tab.
-    -  The website was tested on iPhone 8, X and 11 pro, iPad, Macbook, and Desktop by Me.
-    -  I asked friends to critique the site and make an account/purchases to ensure it was working from their device and to ensure it was a user friendly experience for them.
+-  I tested the website on Google Chrome, Firefox, and Edge.
+-  I tested to make sure the website links and navigation are working correctly and all external links are opened in a new tab.
+-  The website was tested on iPhone 8, X and 11 pro, iPad, Macbook, and Desktop by Me.
+-  I asked friends to critique the site and make an account/purchases to ensure it was working from their device and to ensure it was a user friendly experience for them.
+<br>
+<br>
+# Manual Testing
 
+The following manual tests have been carried out by me without any issues.
+<hr>
+
+### Site Navigation
+
+#### Header :
+
+- A user can click the website logo link to navigate back to the homepage. 
+- The search bar returns relevant products to the user. 
+- The My Account button is black as standard and has a dropdown of log in and sign up. If a user is signed in it will display their username under the icon in blue giving a clear indication of their login status. If the logged in user is a superuser, they have access to the product management link where they can add a product to the website.
+- The shopping bag is black by default and if a product is added to the bag it turns blue. The price will also update accordingly.
+
+#### Navigation Bar :
+
+- On hover of the navigation bar, the bar will change colour to indicate that the user is on the bar.
+- On click of any of the nav menu items, a dropdown will show the user all of the extra nav options they have. Cúl blog only has extra dropdown options if you are site-admin/ superuser
+
+### User Authentication
+
+#### Sign Up/Register Page:
+
+- A user will see a link to sign in  if they are already registered the will take them to the sign in page.
+- If not they can input their details into the form and create an account.
+- All fields are required and the form can not be submitted unless they are filled in.
+- Email field isn’t valid without an actual email. 
+- Email (again) field and password (again) field are not valid unless they are exact matches to the email and password fields.
+- On submission of a valid form an email verification will be sent to the entered email address where a user will have to verify their account.
+
+#### Sign in Page:
+
+- A user will be prompted to sign up if they haven’t already before they can sign in. There is a link to the sign up page. 
+- On the sign-in page, users will be asked for their username or email that they signed up with, (Both will work to sign in) along with their password. 
+- There is a link to the forgot password page. 
+
+#### Sign Out Page:
+
+- The link to sign out is located as a dropdown of the my profile icon. 
+- On clicking this the user will be redirected to the sign out page where they will confirm the sign out.
+
+### Products
+
+#### Products Page :
+
+- In the all products page a user can see all the categories that are applied to their search. They can click on a specific category to narrow down the search more. 
+- A user can see how many products are related to their current search and they can reset the filters they have applied to the search. 
+- A user can click the sort by dropdown box and choose from all of the options. These are all working as intended.
+- There is a back to top button on the bottom right that a user can click to bring them back to the top of the page.
+
+#### Product Detail Page: 
+
+- In the product detail page a user can see a larger view of the product, the product description and the price. 
+- A user can select the product size they want to add to bag.
+- A user can select the product quantity they want to add to bag. 
+- The add to bag button will update the users bag with the product and update the bag total price.
+
+
+### Checkout
+
+
+#### Shopping bag :
+
+- A user can review their shopping bag and update the quantity of products or remove products they no longer wish to purchase.
+- Here they can see the total cost of their purchase. They can also see how much delivery will cost them.
+- The Secure checkout button will take them to the checkout page.
+- The keep shopping button will take them back to the products page.
+
+#### Checkout : 
+
+- A user can see an order summary of what they’re about to buy.
+- A user can fill out a form with their details, delivery details and payment details. The form clearly indicates required fields with an asterisk*.
+- A form will not be submittable until all required fields are satisfied.
+- A frequent user can log in and have their details auto filled.
+
+#### Checkout Confirmation:
+
+- A valid checkout form submission will take the user to an order review page.
+- A custom loading screen will display.
+- A user will receive an email with the details of their order.
+- A user has an option to return to the shop by clicking the “Check Out Our Latest Accessories” button.
+
+### Profile
+
+#### My Profile:
+
+- A registered user can access their profile by clicking the profile icon in the header. 
+- A registered user can see all of their previous orders with that account.
+- A registered user can update their delivery details for the auto fill form. 
+
+
+### Cúl Blog
+
+#### Blog:
+
+- A user can navigate to the Cúl Blog page.
+- A user can scroll and see all available blog posts to read.
+- A user can click on any blog post to bring them to the blog detail page of that particular article.
+
+#### Blog Detail: 
+
+- A user can read the full article.
+- A user can click on the links at the bottom of the article to take them to relevant products from that article.
+- A user can return to the blog by means of a back button at the bottom of the blog.
+
+
+
+### Admin/Superuser
+
+#### Products:
+
+- An admin can access the Product management link under the profile icon, when signed in.
+- An admin can Add a new product to the site from the product management page.
+- An admin will see edit/delete buttons on the product detail view of any product.
+- An admin can edit any product.
+- An admin can delete any product.
+
+#### Blog:
+
+- An admin has access to the add blog page from the blog, when signed in.
+- An admin has access to the edit / delete buttons at the bottom of every blog detail page.
+- An admin can edit any blog post.
+- An admin can delete any blog post.
+- An admin can attach links to blog posts using the rich text editor to advertise products to the user.
+
+<hr>
 
 # Frameworks, Libraries & Programs Used
 
