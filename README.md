@@ -359,5 +359,3 @@ An Admin/SuperUser can access the Add Blogpost Page. They also get access the ed
 13. [Json Formatter](https://jsonformatter.org/)
     - Json formatter was to create my own product fixtures.
 
-
-

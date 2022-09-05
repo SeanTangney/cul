@@ -17,8 +17,8 @@ body {
 }
 
 .footer-container {
-    background: rgb(228, 237, 245);
-    z-index: 9999999999999;
+    background: #e4edf5;
+    z-index: 999999999;
     width: 100%;
 
 }
