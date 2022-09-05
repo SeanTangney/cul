@@ -480,6 +480,10 @@ I researched on google and on wordtracker to see what keywords would best suit m
     <img src="media/readme_images/wordtracker2.png">
 </details>
 
+<details>
+    <summary>My Chosen Keywords</summary>
+    <img src="media/readme_images/my_keywords.png">
+</details>
 <hr>
 
 # Frameworks, Libraries & Programs Used
