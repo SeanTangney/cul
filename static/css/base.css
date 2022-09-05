@@ -30,8 +30,14 @@ body {
 
 /* from Bulma */
 .icon {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
@@ -47,6 +53,8 @@ body {
 }
 
 .main-logo-link {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -150,6 +158,22 @@ a.category-badge>span.badge:hover {
     margin-top: 2vh;
 }
 
+input[name='q']::-webkit-input-placeholder {
+    color: #6c757d;
+}
+
+input[name='q']::-moz-placeholder {
+    color: #6c757d;
+}
+
+input[name='q']:-ms-input-placeholder {
+    color: #6c757d;
+}
+
+input[name='q']::-ms-input-placeholder {
+    color: #6c757d;
+}
+
 input[name='q']::placeholder {
     color: #6c757d;
 }
@@ -200,6 +224,22 @@ input[name='q']::placeholder {
     display: none;
 }
 
+.allauth-form-inner-content input::-webkit-input-placeholder {
+    color: #737e86;
+}
+
+.allauth-form-inner-content input::-moz-placeholder {
+    color: #737e86;
+}
+
+.allauth-form-inner-content input:-ms-input-placeholder {
+    color: #737e86;
+}
+
+.allauth-form-inner-content input::-ms-input-placeholder {
+    color: #737e86;
+}
+
 .allauth-form-inner-content input::placeholder {
     color: #737e86;
 }
@@ -226,7 +266,11 @@ input[name='q']::placeholder {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
