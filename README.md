@@ -182,6 +182,12 @@ Users can use the nav menu to go to the Cúl Blog. Here they can find relevant G
     <img src="media/readme_images/blog2.png">
 </details>
 <hr>
+Cúl Sports Facebook page mock up. I used the supplied wireframe.
+<details>
+    <summary>Facebook</summary>
+    <img src="media/readme_images/cul_facebook.png">
+</details>
+<hr>
 
 # Admin Features
 
@@ -420,7 +426,15 @@ The following manual tests have been carried out by me without any issues.
 - A user can click on the links at the bottom of the article to take them to relevant products from that article.
 - A user can return to the blog by means of a back button at the bottom of the blog.
 
+### Toasts
 
+- A user will recieve all intended toasts to clarify their actions.
+
+### Newsletter sign up and Footer
+
+- A user will see a model popup on first entry to the website asking if they want to sign up to the newsletter.
+- A user can access this signup later on from the footer. The link in the footer has a target of _blank to open signup in a new tab.
+- A user can access the site facebook page from the footer. 
 
 ### Admin/Superuser
 
@@ -439,6 +453,32 @@ The following manual tests have been carried out by me without any issues.
 - An admin can edit any blog post.
 - An admin can delete any blog post.
 - An admin can attach links to blog posts using the rich text editor to advertise products to the user.
+
+<hr>
+
+# SEO
+I researched on google and on wordtracker to see what keywords would best suit my website.
+<details>
+    <summary>Google Autofill</summary>
+    <img src="media/readme_images/google_autofill.png">
+    <img src="media/readme_images/google_autofill1.png">
+    <img src="media/readme_images/google_autofill2.png">
+    <img src="media/readme_images/google_autofill3.png">
+</details>
+
+<details>
+    <summary>Google Related Search</summary>
+    <img src="media/readme_images/google_related_searches.png">
+</details>
+ 
+<hr>
+ I found all of these to be good searches but in particular if i searched any county name and the word jersey it was popular. This was backed up in the WordTracker searches.
+<hr>
+<details>
+    <summary>WordTracker</summary>
+    <img src="media/readme_images/wordtracker1.png">
+    <img src="media/readme_images/wordtracker2.png">
+</details>
 
 <hr>
 
@@ -486,3 +526,18 @@ The following manual tests have been carried out by me without any issues.
 13. [Json Formatter](https://jsonformatter.org/)
     - Json formatter was to create my own product fixtures.
 
+
+## Credits 
+
+### Images 
+- I up my made my own fixtures and categories for the website. All product images were taken from [O'neills](https://www.oneills.com/) except for the waterford jerseys, taken from [Azzurri](https://azzurri.ie/), the Armagh and Leitrim jerseys taken from [McKeever](https://www.mckeeverteamwear.com/).
+- I took the background image from [Gaa.ie](https://gaa.ie). 
+
+### Tutorials
+- I used the boutique ado tutorials for help.
+- I used [CodeWithStein](https://www.youtube.com/c/CodeWithStein) tutorials for help with general django and blog problems.
+- I used [StackOverflow](https://stackoverflow.com/) when debugging.
+
+### 
+- Thanks to CodeInstitute tutor support for helping me with code related issues.
+- Thanks to my Mentor for continuous guidence.
