@@ -54,6 +54,8 @@ In Ireland there are 32 counties and every county has a football and hurling tea
         2. As a Returning Visitor, I want to be able to Sort a specific category product , so that i can Sort by best price, rating, category or sort the products in that category by name.
         3. As a Returning Visitor, I want to be able to Sort multiple categories of products simultaneously , so that i can Find best priced/rated products across broad categories such as clothing/equipment.
         4. As a Returning Visitor, I want to be able to Search for a product by name or description , so that i can Find a specific product I'd like to purchase.
+        6. As a site user, i want to be able to contact the store straight from the website.
+
 
     -   #### Site Maintainer / Admin Goals
 
@@ -61,6 +63,7 @@ In Ireland there are 32 counties and every county has a football and hurling tea
         2. As an Admin of the site i want to be able to see new orders.
         3. As an admin of the site i want to be able to maintain the library of products, adding,deleting and editing them etc.
         4. As an admin, I want to be able to make blog posts so that i can advertise products to the user through them.
+        5. As an admin, i want to be able to see a list of submitted contact us forms in the admin panel.
 
 <hr>
 <div>
@@ -110,6 +113,10 @@ In Ireland there are 32 counties and every county has a football and hurling tea
 <details>
     <summary>Blog Details</summary>
     <img src="media/readme_images/Wireframesblogdetail.png">
+</details>
+<details>
+    <summary>Contact Us Page</summary>
+    <img src="media/readme_images/contact us.png">
 </details>
 </div>
 <hr>
@@ -180,6 +187,12 @@ Users can use the nav menu to go to the Cúl Blog. Here they can find relevant G
     <summary>Blog</summary>
     <img src="media/readme_images/blog.png">
     <img src="media/readme_images/blog2.png">
+</details>
+<hr>
+<details>
+    <summary>Contact Us Page</summary>
+    <img src="media/readme_images/contact_us1.png">
+    <img src="media/readme_images/contact_us2.png">
 </details>
 <hr>
 I created a custom loading screen users can see when transitioning from the checkout to the order confirmation page.
@@ -294,6 +307,9 @@ An Admin/SuperUser can access the Add Blogpost Page. They also get access the ed
 
         - By using the search bar i can type any product name or related word into the search bar and see relevant products.
 
+    5. As a site user, i want to be able to contact the store straight from the website.
+
+        - In the footer of the site there is a link to the contact us page. Here a user can submit a form to send it straight to the email of the site owner.
 
 <br>
 
@@ -316,6 +332,11 @@ An Admin/SuperUser can access the Add Blogpost Page. They also get access the ed
     4. As an admin, I want to be able to make blog posts so that i can advertise products to the user through them.
 
         - It is very easy for an admin to write a blog post on the site. It is also good advertising for jerseys becuase if someone is interested enough to read an article about a particular match then they will probably be interested in buying a jersey that one of those teams wear.
+    
+    5. As an admin, i want to be able to see a list of submitted contact us forms in the admin panel.
+
+        - As an admin i can go into the admin panel and click on contacts. This will show me a list of all submitted forms from the contact us page.
+
     
 
 # Testing
@@ -477,6 +498,12 @@ An Admin/SuperUser can access the Add Blogpost Page. They also get access the ed
 - An admin can delete any blog post.
 - An admin can attach links to blog posts using the rich text editor to advertise products to the user.
 
+#### Contact Us:
+
+- The Contact Us form properly submits.
+- An email is sent back to the site admin with the the users inputted data on it.
+
+
 #### Custom 404/500:
 
 - The custom 404/500 ppage is accessible by adding /test onto the url
@@ -507,6 +534,10 @@ An Admin/SuperUser can access the Add Blogpost Page. They also get access the ed
     <summary>Adding And Deleting Products</summary>
     <img src="media/readme_images/successful_add_toast.png">
     <img src="media/readme_images/successful_delete_toast.png">
+</details>
+<details>
+    <summary>Submitting a Contact Us form</summary>
+    <img src="media/readme_images/contact_us_toast.png">
 </details>
 <br>
 <hr>
@@ -678,6 +709,7 @@ When deploying to AWS i used the [AWS_CHEAT_SHEET](https://codeinstitute.s3.amaz
 ### Tutorials
 - I used the code institute tutorials and boutique ado tutorials for help.
 - I used [CodeWithStein](https://www.youtube.com/c/CodeWithStein) tutorials for help with general django and blog problems.
+- I used [Codemy.com](https://www.youtube.com/c/Codemycom) youtube tutorials were also used for help with general django and blog problems.
 - I used [StackOverflow](https://stackoverflow.com/) when debugging.
 
 ### Special Thanks 

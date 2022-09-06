@@ -75,8 +75,20 @@
                             required></textarea>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <!-- <div class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Query Type
+                        </div> -->
+
+                        <select class="form-select" aria-labelledby="dropdownMenuButton">
+                            {% for type in types %}
+                            <option value="{{ type }}">{{ type }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-6">
                         <button type="submit" class="btn btn-info">Send Message</button>
                     </div>
                 </div>

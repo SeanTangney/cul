@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib import messages
 from django.core.mail import send_mail
-from .models import Contact
+from .models import Contact, QueryType
 
 
 def index(request):
@@ -37,4 +37,5 @@ def contact(request):
                         'message_name': message_name
                         })
     else:
-        return render(request, 'home/contact.html', {})
+        query_types = QueryType.objects.all()
+        return render(request, 'home/contact.html', {'types': query_types})
