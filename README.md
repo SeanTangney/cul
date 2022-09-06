@@ -182,12 +182,17 @@ Users can use the nav menu to go to the Cúl Blog. Here they can find relevant G
     <img src="media/readme_images/blog2.png">
 </details>
 <hr>
-Cúl Sports Facebook page mock up. I used the supplied wireframe.
+I created a custom loading screen users can see when transitioning from the checkout to the order confirmation page.
 <details>
-    <summary>Facebook</summary>
-    <img src="media/readme_images/cul_facebook.png">
+    <summary>Custom Loading Screen</summary>
+    <img src="media/readme_images/custom_loading_screen.png">
 </details>
 <hr>
+<details>
+    <summary>I created a custom 404/500</summary>
+    <img src="media/readme_images/custom_error.png">
+</details>
+
 
 # Admin Features
 
@@ -340,7 +345,7 @@ An Admin/SuperUser can access the Add Blogpost Page. They also get access the ed
 
 # Manual Testing
 
-The following manual tests have been carried out by me without any issues.
+<strong>The following manual tests have been carried out by me without any issues.</strong>
 <hr>
 
 ### Site Navigation
@@ -472,6 +477,11 @@ The following manual tests have been carried out by me without any issues.
 - An admin can delete any blog post.
 - An admin can attach links to blog posts using the rich text editor to advertise products to the user.
 
+#### Custom 404/500:
+
+- The custom 404/500 ppage is accessible by adding /test onto the url
+
+
 <hr>
 
 ## Testing Toasts
@@ -531,6 +541,21 @@ I researched on google and on wordtracker to see what keywords would best suit m
 </details>
 <hr>
 
+## Marketing
+
+Cúl Sports Facebook page mock up. I used the supplied wireframe.
+<details>
+    <summary>Facebook</summary>
+    <img src="media/readme_images/cul_facebook.png">
+</details>
+<hr>
+
+- I have linked back from the blog articles to relevant products from that article.
+- I have used mailchimp to host newsletter sign ups through a model on entery to site and in the footer.
+- I have a facebook link that would link to the real facebook if company was real.
+
+<hr>
+
 # Deployment
 
 ## Deploying to github
@@ -577,7 +602,12 @@ When deploying to AWS i used the [AWS_CHEAT_SHEET](https://codeinstitute.s3.amaz
 21. Add the keys to the config vars in heroku and to the env.py file.
 
 
+# Languages Used
 
+- [HTML](https://en.wikipedia.org/wiki/HTML5)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [Python](https://www.python.org/)
+- [JavaScript](https://www.javascript.com/)
 
 
 # Frameworks, Libraries & Programs Used
@@ -630,8 +660,8 @@ When deploying to AWS i used the [AWS_CHEAT_SHEET](https://codeinstitute.s3.amaz
 16. [Postgres](https://www.postgresql.org/)
     - This was used for the database
 
-17. [AWS](https://aws.amazon.com/)
-    - This was used to host for my static files
+17. [Stripe](https://stripe.com/ie)
+    - Stripe was used to manage payments on the site.
 
 
 ## Credits 
