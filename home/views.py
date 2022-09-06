@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib import messages
+from django.core.mail import send_mail
 
 
 def index(request):
@@ -15,11 +16,19 @@ def contact(request):
         message_email = request.POST['message-email']
         message = request.POST['message']
 
+        # Send Email
+        send_mail(
+            'Cúl Contact Form - ' + message_name,  # Subject line
+            message,  # Message
+            'This message was sent from: ' + message_email,  # From
+            ['sean_tangney@hotmail.com'],  # To Email
+        )
+
         messages.success(request, 'Thank you. '
                                   ' Message Succesfully Sent!')
-        return render(request, 'home/contact.html')
+        return render(request, 'home/contact.html', {})
 
     else:
         messages.error(request, 'Failed To Send Message. '
                                 ' Please Ensure The Form Is Valid.')
-        return render(request, 'home/contact.html')
+        return render(request, 'home/contact.html', {})
