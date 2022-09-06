@@ -502,6 +502,7 @@ An Admin/SuperUser can access the Add Blogpost Page. They also get access the ed
 
 - The Contact Us form properly submits.
 - An email is sent back to the site admin with the the users inputted data on it.
+- A user can select which type of query they are sending when submitting the form.
 
 
 #### Custom 404/500:
