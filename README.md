@@ -319,8 +319,21 @@ An Admin/SuperUser can access the Add Blogpost Page. They also get access the ed
 -  I tested to make sure the website links and navigation are working correctly and all external links are opened in a new tab.
 -  The website was tested on iPhone 8, X and 11 pro, iPad, Macbook, and Desktop by Me.
 -  I asked friends to critique the site and make an account/purchases to ensure it was working from their device and to ensure it was a user friendly experience for them.
-- I used [W3C](https://validator.w3.org/) to validate my HTML and all passed
-- I used [Jigsaw](https://jigsaw.w3.org/css-validator/) to validate my CSS and all passed
+- I used [W3C](https://validator.w3.org/) to validate my HTML and all passed with no errors and just two minor warnings.
+- I used [Jigsaw](https://jigsaw.w3.org/css-validator/) to validate my CSS and all passed.
+<details>
+    <summary>Jigsaw Results</summary>
+    <img src="media/readme_images/jigsaw_results.png">
+</details>
+- I used lighthouse on chrome to check my performance, seo, accessibility and best practices.
+<details>
+    <summary>Lighthouse Results</summary>
+    <img src="media/readme_images/lighthouse_desktop.png">
+</details>
+<details>
+    <summary>Lighthouse Mobile</summary>
+    <img src="media/readme_images/lighthouse_mobile.png">
+</details>
 
 <br>
 <br>
@@ -354,6 +367,7 @@ The following manual tests have been carried out by me without any issues.
 - Email field isn’t valid without an actual email. 
 - Email (again) field and password (again) field are not valid unless they are exact matches to the email and password fields.
 - On submission of a valid form an email verification will be sent to the entered email address where a user will have to verify their account.
+
 
 #### Sign in Page:
 
@@ -484,7 +498,8 @@ The following manual tests have been carried out by me without any issues.
     <img src="media/readme_images/successful_add_toast.png">
     <img src="media/readme_images/successful_delete_toast.png">
 </details>
-
+<br>
+<hr>
 
 # SEO
 I researched on google and on wordtracker to see what keywords would best suit my website.
@@ -538,6 +553,29 @@ I researched on google and on wordtracker to see what keywords would best suit m
 ## Deploying to AWS
 
 When deploying to AWS i used the [AWS_CHEAT_SHEET](https://codeinstitute.s3.amazonaws.com/fullstack/AWS%20changes%20sheet.pdf) From Code institute
+
+1. First Go to [AWS](https://aws.amazon.com) .
+2. Create an AWS account and select continue.
+3. On the accounts page sellect personal and fill put required info. 
+4. Click create account and continue. Enter credit card info.
+5. Go to aws management console. Search for s3 and create a new bucket.
+6. Name bucket and Select region. Make bucket public.
+7. Turn on static website hosting.
+8. Go to permissions tab.
+9. Paste in cors configuration from aws cheat sheet.
+10. Go to bucket policy tab and select policy generator to generate a security policy.
+11. Policy type will be s3 bucket policy and allow all principles by using an asterisk*, action will be get object.
+12. Copy Amazon Reource Name (arn) and paste it into arn box.
+13. Click Add statement and generate policy. Then copy the policy into the bucket policy editor.
+14. Add  " /* " onto the end of the resource key to allow access to all resources in the bucket. Click Save.
+15. Go to access control tab. Set list objects permission for everyone under the public access section.
+16. Open IAM. Create a group for the user and click create an access policy to access our bucket.
+17. Review the policy, give it a name and description. Then create policy.
+18. On the iam access page click manage your group. Attach the policy you created.
+19. Select add user and create a user. Give the user programmatic access and select next until user is created.
+20. Download csv file for the acces key and secret access key.
+21. Add the keys to the config vars in heroku and to the env.py file.
+
 
 
 
@@ -596,7 +634,6 @@ When deploying to AWS i used the [AWS_CHEAT_SHEET](https://codeinstitute.s3.amaz
     - This was used to host for my static files
 
 
-
 ## Credits 
 
 ### Images 
@@ -609,7 +646,7 @@ When deploying to AWS i used the [AWS_CHEAT_SHEET](https://codeinstitute.s3.amaz
 - [Derry V Galway](https://www.skysports.com/gaa/gaelic-football/news/30553/12646017/derry-and-galway-flying-as-opportunity-knocks-in-all-ireland-semi-final-peter-canavan-column)
 
 ### Tutorials
-- I used the boutique ado tutorials for help.
+- I used the code institute tutorials and boutique ado tutorials for help.
 - I used [CodeWithStein](https://www.youtube.com/c/CodeWithStein) tutorials for help with general django and blog problems.
 - I used [StackOverflow](https://stackoverflow.com/) when debugging.
 
