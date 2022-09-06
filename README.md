@@ -460,6 +460,32 @@ The following manual tests have been carried out by me without any issues.
 
 <hr>
 
+## Testing Toasts
+
+
+<details>
+    <summary>Sign In and Sign Out Toasts</summary>
+    <img src="media/readme_images/sign_in_toast.png">
+    <img src="media/readme_images/sign_out_toast.png">
+</details>
+<details>
+    <summary>Add to Bag, Update Bag and Remove From Bag Toasts</summary>
+    <img src="media/readme_images/add_to_bag_toast.png">
+    <img src="media/readme_images/updated_quantity_toast.png">
+    <img src="media/readme_images/removed_from_bag_toast.png">
+</details>
+<details>
+    <summary>Order Confirmation and Past Order View from My Profile</summary>
+    <img src="media/readme_images/order_confirmation_toast.png">
+    <img src="media/readme_images/past_order_toast.png">
+</details>
+<details>
+    <summary>Adding And Deleting Products</summary>
+    <img src="media/readme_images/successful_add_toast.png">
+    <img src="media/readme_images/successful_delete_toast.png">
+</details>
+
+
 # SEO
 I researched on google and on wordtracker to see what keywords would best suit my website.
 <details>
