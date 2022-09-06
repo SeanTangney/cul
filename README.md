@@ -540,8 +540,20 @@ An Admin/SuperUser can access the Add Blogpost Page. They also get access the ed
     <summary>Submitting a Contact Us form</summary>
     <img src="media/readme_images/contact_us_toast.png">
 </details>
+<details>
+    <summary>Sending a Contact Us Message</summary>
+    <img src="media/readme_images/message_sent_toast.png">
+</details>
 <br>
 <hr>
+
+# Business Model
+
+- This website will be attractive to fans of the GAA. Site trafic will be grown through the social media and in particular facebook. There will be links from the blog back to the products on the site. 
+<details>
+    <summary>Facebook</summary>
+    <img src="media/readme_images/cul_facebook.png">
+</details>
 
 # SEO
 I researched on google and on wordtracker to see what keywords would best suit my website.
