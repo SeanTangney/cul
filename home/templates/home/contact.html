@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %} | {{ product.name }}{% endblock %}
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+
+    <div class="row">
+        <div class="col mt-2">
+            <h1 class="logo-font mb-4 text-info text-center">Contact Us</h1>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col embed-responsive embed-responsive-16by9 my-3 col-12 col-md-6 border">
+            <iframe class="embed-responsive-item"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7705.718453259141!2d-8.436779487123518!3d51.89759466906612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48449ab9e106a629%3A0xa8dd664d542bbf0a!2zUMOhaXJjIFXDrSBDaGFvaW1o!5e0!3m2!1sen!2sie!4v1662464152015!5m2!1sen!2sie"
+                width="200" height="200" style="border:2;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="row my-5">
+        <div class="col-12 col-md-3 text-center text-info border border-1 pt-2">
+            <h4><strong>Address</strong></h4>
+            <div class="text-secondary">
+                <p><small>An Mhuríne</small></p>
+                <p><small>Ballintemple</small></p>
+                <p><small>Chorcaigh</small></p>
+            </div>
+            <hr>
+            <h4><strong>Phone</strong></h4>
+            <div class="text-secondary">
+                <p><small>0871234567</small></p>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-7 text-info">
+            <div class="row ml-1">
+                <h3>Get In Touch</h3>
+                <hr>
+            </div>
+            <form action="{% url 'contact' %}" method="POST">
+                {% csrf_token %}
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="message-email" class="form-control mb-30" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-12">
+                        <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-info">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
