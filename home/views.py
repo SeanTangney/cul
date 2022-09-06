@@ -26,7 +26,9 @@ def contact(request):
 
         messages.success(request, 'Thank you. '
                                   ' Message Succesfully Sent!')
-        return render(request, 'home/contact.html', {})
+        return render(request, 'home/contact.html', {
+                        'message_name': message_name
+                        })
 
     else:
         messages.error(request, 'Failed To Send Message. '
