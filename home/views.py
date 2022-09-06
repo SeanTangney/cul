@@ -20,7 +20,7 @@ def contact(request):
         send_mail(
             'Cúl Contact Form - ' + message_name,  # Subject line
             message,  # Message
-            'This message was sent from: ' + message_email,  # From
+            None,  # From
             ['sean_tangney@hotmail.com'],  # To Email
         )
 
@@ -29,8 +29,5 @@ def contact(request):
         return render(request, 'home/contact.html', {
                         'message_name': message_name
                         })
-
     else:
-        messages.error(request, 'Failed To Send Message. '
-                                ' Please Ensure The Form Is Valid.')
         return render(request, 'home/contact.html', {})
