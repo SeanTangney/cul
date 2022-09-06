@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from .models import Contact
 
+
 def index(request):
     """ A view to return the index page """
 
